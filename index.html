@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>DEWA | Dubai Electricity &amp; Water Authority</title>
+
+    <!-- ========================================
+         OFFICIAL DUBAI DESIGN SYSTEM CSS
+    ========================================= -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@dubai-design-system/components-js@3.12.16/dist/dda/dda.css"
+    >
+
+
+    <!-- Material Icons used by DDA -->
+
+    <link
+        href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet"
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        rel="stylesheet"
+    >
+
+
+    <!-- Our project CSS -->
+
+    <link
+        rel="stylesheet"
+        href="./style.css"
+    >
+
+
+    <!-- ========================================
+         OFFICIAL DDA WEB COMPONENT LOADER
+    ========================================= -->
+
+    <script type="module">
+
+        import { defineCustomElements }
+        from "https://cdn.jsdelivr.net/npm/@dubai-design-system/components-js@3.12.16/loader/index.es2017.js";
+
+        defineCustomElements();
+
+    </script>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     DDA REUSABLE HEADER
+     Official component — NOT recreated manually
+========================================================= -->
+
+<dda-header
+
+    first-logo-href="https://www.dubai.gov.ae"
+
+    first-logo-src="https://www.dof.gov.ae/Style Library/img/gov-logo.svg"
+
+    first-logo-white-src="https://www.dof.gov.ae/Style Library/img/gov-logo-white.svg"
+
+    first-logo-alt="Government of Dubai"
+
+    first-logo-target="_blank"
+
+
+    second-logo-href="https://www.dubai.gov.ae"
+
+    second-logo-src="https://www.digitaldubai.ae/ResourcePackages/Theme/assets/dist/images/logo.svg"
+
+    second-logo-white-src="https://www.digitaldubai.ae/ResourcePackages/Theme/assets/dist/images/logo-white.svg"
+
+    second-logo-alt="Digital Dubai"
+
+
+
+    search_button_name="search_button_name"
+
+    search_input_name="search_input_name"
+
+    search_input_placeholder="Search"
+
+    searchfunctionality="() => console.log('Search Functionality')"
+
+    search_tooltip="Search"
+
+    mobile-menu-search-id="mobileSearch"
+
+    mobile-menu-search-url="javascript:void(0)"
+
+
+
+    use-predesigned-accessibility-menu="true"
+
+    accessibility_tooltip="Accessibility"
+
+    toggle_accessibility_button_name="toggle_accessibility_button_name"
+
+    accessibility_button_text="accessibility_button_text"
+
+    accessibility_button_id="accessibility_button_id"
+
+    accessibility_button_icon_family="material-icons material-symbols-outlined"
+
+    accessibility_button_icon_name="accessible_forward"
+
+    accessibilitymenufunctionality="() => console.log('Accessibility Menu Functionality')"
+
+    close_accessibility_button_name="close_accessibility_button_name"
+
+
+
+    contrast_title="Contrast"
+
+    contrast_description="Select your preferred contrast setting"
+
+    contrast_noraml_text="Normal"
+
+    contrast_color_blind_text="Colours Blind"
+
+    contrast_red_weakness_text="Red Weakness"
+
+    contrast_green_weakness_text="Green Weakness"
+
+
+
+    normalcontrast="() => console.log('Normal Text')"
+
+    blindcontrast="() => console.log('Blind Text')"
+
+    redcontrast="() => console.log('Red Text')"
+
+    greencontrast="() => console.log('Green Text')"
+
+
+
+    screen_reader_title="Screen Reader"
+
+    screen_reader_description="Listen to the content of the page by clicking play or listen"
+
+    read_speaker_link="app-eu.readspeaker.com"
+
+
+
+    text_size_title="Text Size"
+
+    text_size_description="Use the buttons below to increase or decrease the text size"
+
+    smtextsize="() => console.log('Small Text')"
+
+    basetextsize="() => console.log('Base Text')"
+
+    lgtextsize="() => console.log('Large Text')"
+
+
+
+    language_tooltip="Language"
+
+    language_text="العربية"
+
+    language_button_name="language_button_name"
+
+    languageswitch="() => console.log('Language Switcher')"
+
+
+
+    login_tooltip="Login"
+
+    login-text="Login"
+
+    login-link="#login"
+
+    login-icon="account_circle"
+
+    use-login-popup="true"
+
+    login-popup-links='[
+        {
+            "popupItemLabel": "Profile",
+            "url": "#"
+        },
+        {
+            "popupItemLabel": "Logout",
+            "url": "#"
+        }
+    ]'
+
+
+
+    hamburger_menu_button_name="Menu"
+
+    side-main-menu-title="Main Menu"
+
+
+    side-menu-items='[
+        {
+            "label": "Home",
+            "active": "true",
+            "href": "#",
+            "subMenu": []
+        },
+
+        {
+            "label": "Initiatives",
+            "href": "#",
+
+            "subMenu": [
+
+                {
+                    "headerLabel": "Initiatives",
+                    "subLinkClass": "",
+                    "label": "Submenu-1",
+                    "href": "#",
+
+                    "subMenu": [
+
+                        {
+                            "headerLabel": "Initiatives",
+                            "subLinkClass": "",
+                            "label": "Submenu-2",
+                            "href": "#",
+
+                            "subMenu": [
+
+                                {
+                                    "headerLabel": "Initiatives",
+                                    "subLinkClass": "",
+                                    "label": "Submenu-4",
+                                    "href": "#"
+                                }
+
+                            ]
+                        },
+
+                        {
+                            "headerLabel": "Initiatives",
+                            "subLinkClass": "",
+                            "label": "Submenu-3",
+                            "href": "#"
+                        }
+
+                    ]
+                }
+
+            ]
+        },
+
+        {
+            "label": "Services",
+            "href": "#",
+
+            "subMenu": [
+
+                {
+                    "headerLabel": "Service",
+                    "subLinkClass": "",
+                    "label": "Service-1",
+                    "href": "#"
+                },
+
+                {
+                    "headerLabel": "Service",
+                    "subLinkClass": "",
+                    "label": "Service-2",
+                    "href": "#"
+                }
+
+            ]
+        },
+
+        {
+            "label": "Data",
+            "href": "#",
+            "subMenu": []
+        },
+
+        {
+            "label": "Government Services",
+            "href": "#",
+            "subMenu": []
+        },
+
+        {
+            "label": "Investor Relations",
+            "href": "#",
+            "subMenu": []
+        },
+
+        {
+            "label": "Locations",
+            "href": "#",
+            "subMenu": []
+        },
+
+        {
+            "label": "Newsroom",
+            "href": "#",
+            "subMenu": []
+        },
+
+        {
+            "label": "Contact Us",
+            "href": "#",
+            "subMenu": []
+        }
+
+    ]'
+
+
+    hide-other-menu="false"
+
+    side-other-menu-title="Other"
+
+
+    other-menu-items='[
+        {
+            "label": "Menu 1",
+            "active": "true",
+            "href": "#"
+        },
+
+        {
+            "label": "Menu 2",
+            "href": "#"
+        },
+
+        {
+            "label": "Menu 3",
+            "href": "#"
+        }
+    ]'
+
+
+    close_menu_button_name="close_menu_button_name"
+
+
+    quick-links='[
+
+        {
+            "headerMenuLabel": "Home",
+            "active": "true",
+            "url": "#"
+        },
+
+        {
+            "headerMenuLabel": "About DEWA",
+            "url": "javascript:void(0)",
+            "type": "dda_default_submenu",
+
+            "children": [
+
+                {
+                    "headerMenuLabel": "Submenu 1",
+                    "url": "#",
+                    "defaultSubMenuTitle": "Submenu 1 Title",
+
+                    "children": [
+
+                        {
+                            "headerMenuLabel": "SubSubmenu 1",
+                            "url": "#"
+                        },
+
+                        {
+                            "headerMenuLabel": "SubSubmenu 1",
+                            "url": "#"
+                        }
+
+                    ]
+                },
+
+                {
+                    "headerMenuLabel": "Submenu 2",
+                    "url": "#",
+                    "defaultSubMenuTitle": "Submenu 2 Title",
+
+                    "children": [
+
+                        {
+                            "headerMenuLabel": "SubSubmenu 2",
+                            "url": "#"
+                        },
+
+                        {
+                            "headerMenuLabel": "SubSubmenu 2",
+                            "url": "#"
+                        }
+
+                    ]
+                },
+
+                {
+                    "headerMenuLabel": "Submenu 3",
+                    "url": "#"
+                }
+
+            ]
+        },
+
+        {
+            "headerMenuLabel": "Services",
+            "url": "javascript:void(0)",
+            "type": "dda_main_megamenu",
+
+            "children": [
+
+                {
+                    "title": "QUICK LINKS 1",
+
+                    "items": [
+
+                        {
+                            "headerMenuLabel": "Service 1",
+                            "url": "#",
+                            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                        },
+
+                        {
+                            "headerMenuLabel": "Service 2",
+                            "url": "#"
+                        },
+
+                        {
+                            "headerMenuLabel": "Service 3",
+                            "url": "#"
+                        }
+
+                    ]
+                },
+
+                {
+                    "title": "QUICK LINKS 2",
+
+                    "items": [
+
+                        {
+                            "headerMenuLabel": "Service 1",
+                            "url": "#"
+                        },
+
+                        {
+                            "headerMenuLabel": "Service 2",
+                            "url": "#"
+                        },
+
+                        {
+                            "headerMenuLabel": "Service 3",
+                            "url": "#"
+                        }
+
+                    ]
+                },
+
+                {
+                    "title": "QUICK LINKS 3",
+
+                    "items": [
+
+                        {
+                            "headerMenuLabel": "Service 3",
+                            "url": "#"
+                        }
+
+                    ]
+                },
+
+                {
+                    "title": "QUICK LINKS 4",
+
+                    "items": [
+
+                        {
+                            "headerMenuLabel": "Service 4",
+                            "url": "#"
+                        }
+
+                    ]
+                }
+
+            ]
+        },
+
+        {
+            "headerMenuLabel": "Contact",
+            "url": "#"
+        }
+
+    ]'
+
+></dda-header>
+
+
+<!-- =========================================================
+     OUR PAGE CONTENT
+========================================================= -->
+
+<main>
+
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="container hero-content">
+
+            <span class="hero-label">
+                DUBAI ELECTRICITY &amp; WATER AUTHORITY
+            </span>
+
+            <h1>
+                Towards a sustainable future
+            </h1>
+
+            <p>
+                A simple Vanilla JavaScript starter using the Dubai Design System reusable components.
+            </p>
+
+            <div class="hero-actions">
+
+                <button class="primary-button"
+                    id="exploreButton"
+                >
+                    Explore Services
+                </button>
+
+                <button class="secondary-button"
+                    id="learnMoreButton"
+                >
+                    Learn More
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SERVICES -->
+
+    <section
+        class="services-section"
+        id="services"
+    >
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span class="section-label">
+                    SERVICES
+                </span>
+
+                <h2>
+                    Quick access
+                </h2>
+
+                <p>
+                    Access frequently used services quickly and easily.
+                </p>
+
+            </div>
+
+
+            <div class="service-grid">
+
+
+                <article class="service-card">
+
+                    <div class="service-icon">
+                        <span class="material-icons">
+                            bolt
+                        </span>
+                    </div>
+
+                    <h3>
+                        Electricity
+                    </h3>
+
+                    <p>
+                        Access electricity related services.
+                    </p>
+
+                    <a href="#">
+                        View services
+                        <span class="material-icons">
+                            arrow_forward
+                        </span>
+                    </a>
+
+                </article>
+
+
+
+                <article class="service-card">
+
+                    <div class="service-icon blue">
+
+                        <span class="material-icons">
+                            water_drop
+                        </span>
+
+                    </div>
+
+                    <h3>
+                        Water
+                    </h3>
+
+                    <p>
+                        Access water related services.
+                    </p>
+
+                    <a href="#">
+                        View services
+
+                        <span class="material-icons">
+                            arrow_forward
+                        </span>
+                    </a>
+
+                </article>
+
+
+
+                <article class="service-card">
+
+                    <div class="service-icon bronze">
+
+                        <span class="material-icons">
+                            receipt_long
+                        </span>
+
+                    </div>
+
+                    <h3>
+                        Bills
+                    </h3>
+
+                    <p>
+                        View and manage billing services.
+                    </p>
+
+                    <a href="#">
+                        View services
+
+                        <span class="material-icons">
+                            arrow_forward
+                        </span>
+                    </a>
+
+                </article>
+
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- SERVICE LINK PANELS -->
+
+    <section class="trending-section" aria-labelledby="service-links-title">
+        <div class="container">
+            <h2 class="visually-hidden" id="service-links-title">Services and useful links</h2>
+
+            <div class="trending-grid">
+                <article class="trending-card">
+                    <h3>Trending</h3>
+                    <ul>
+                        <li><a href="https://www.dewa.gov.ae/en/builder/useful-tools/soqoor-program">SOQOOR Programme</a></li>
+                        <li><a href="https://www.dewa.gov.ae/en/builder/electricity-network-services/getting-water-connection">Getting Water Connections</a></li>
+                        <li><a href="https://www.dewa.gov.ae/en/builder/master-plan-noc/infrastructure-noc-application">Infrastructure Projects No Objection Certificate</a></li>
+                        <li><a href="https://www.dewa.gov.ae/en/builder/useful-tools/registration-contractor-and-consultant-services">Builder Enrolment</a></li>
+                        <li><a href="https://www.dewa.gov.ae/en/owner-tracking/dashboard">Track Applications for Project Owners</a></li>
+                        <li><a href="https://www.dewa.gov.ae/en/about-us/service-guide/builder-services">DEWA Service Guide</a></li>
+                        <li><a href="https://www.dewa.gov.ae/en/builder/electricity-network-services/asraa">ASRA'A Initiative</a></li>
+                    </ul>
+                </article>
+
+                <article class="trending-card">
+                    <h3>NOC Services</h3>
+                    <ul>
+                        <li><a href="https://www.dewa.gov.ae/en/builder/master-plan-noc/malem-dubai">MA'LEM DUBAI</a></li>
+                        <li><a href="https://www.dewa.gov.ae/en/about-us/service-guide/builder-services/building-no-objection-certificate-water">Building No Objection Certificate - Water</a></li>
+                        <li><a href="https://www.dewa.gov.ae/en/builder/master-plan-noc/demolishing-noc-application">Demolishing Permits - Electricity/Water</a></li>
+                        <li><a href="https://www.dewa.gov.ae/en/builder/master-plan-noc/infrastructure-noc-application">Infrastructure Projects No Objection Certificate</a></li>
+                    </ul>
+                </article>
+
+                <article class="trending-card">
+                    <h3>Water Network Services</h3>
+                    <ul>
+                        <li><a href="https://www.dewa.gov.ae/en/builder/electricity-network-services/getting-water-connection">Getting Water Connections</a></li>
+                        <li><a href="https://www.dewa.gov.ae/en/builder/electricity-network-services/water-network-modification">Water Network Modification</a></li>
+                    </ul>
+                </article>
+
+                <article class="trending-card">
+                    <h3>Electricity Network Services</h3>
+                    <ul>
+                        <li><a href="https://www.dewa.gov.ae/en/builder/electricity-network-services/al-namoos">Al Namoos - Getting electricity service</a></li>
+                        <li><a href="https://www.dewa.gov.ae/en/builder/electricity-network-services/getting-electricity-permits-and-connections">Getting Electricity Permits &amp; Connections</a></li>
+                        <li><a href="https://www.dewa.gov.ae/en/builder/electricity-network-services/getting-electricity-fit-out-connections">Getting Electricity Fit-Out Connections</a></li>
+                        <li><a href="https://www.dewa.gov.ae/en/builder/electricity-network-services/electricity-network-modification">Electricity Network Modification</a></li>
+                        <li><a href="https://www.dewa.gov.ae/en/builder/electricity-network-services/electricity-connection-cost-calculator">Electricity Connection Cost Calculator</a></li>
+                        <li><a href="https://www.dewa.gov.ae/en/builder/electricity-network-services/apply-for-solar-pv-connections">Getting Solar Permits &amp; Connections</a></li>
+                        <li><a href="https://www.dewa.gov.ae/en/builder/electricity-network-services/asraa">ASRA'A Initiative</a></li>
+                    </ul>
+                </article>
+
+                <article class="trending-card">
+                    <h3>General Technical Services</h3>
+                    <ul>
+                        <li><a href="https://www.dewa.gov.ae/en/builder/my-account/login">DEWA Generation Projects Document Submission</a></li>
+                        <li><a href="https://www.dewa.gov.ae/en/builder/general-technical-services/testing-services">Testing Services</a></li>
+                        <li><a href="https://www.dewa.gov.ae/en/builder/general-technical-services/infrastructure-projects-services">Infrastructure Projects Services</a></li>
+                        <li><a href="https://www.dewa.gov.ae/en/builder/general-technical-services/solar-pv-certification-training">Solar PV Certification Training</a></li>
+                        <li><a href="https://www.dewa.gov.ae/en/builder/general-technical-services/jointer-certification">Jointer Certification for DEWA Projects</a></li>
+                        <li><a href="https://www.dewa.gov.ae/en/scrap-sale">Scrap Sale</a></li>
+                    </ul>
+                </article>
+
+                <article class="trending-card">
+                    <h3>Estimate Payment &amp; Tracking</h3>
+                    <ul>
+                        <li><a href="https://crm.dewa.gov.ae/irj/portal/anonymous/trackr">Track Connections Estimate Payment</a></li>
+                        <li><a href="https://crm.dewa.gov.ae/irj/portal/anonymous/estpayr">Connections Estimate Payment</a></li>
+                        <li><a href="https://crm.dewa.gov.ae/irj/portal/anonymous/esthistory">Connections Estimate History</a></li>
+                        <li><a href="https://www.dewa.gov.ae/en/consumer/my-account/bills-and-payments/estimate-payments">Estimate Payment, History and Refund (for Project Owners)</a></li>
+                        <li><a href="https://www.dewa.gov.ae/en/consumer/my-account/bills-and-payments/find-friends-estimate">Estimate Payment and History (for Friend)</a></li>
+                    </ul>
+                </article>
+
+                <article class="trending-card">
+                    <h3>Shams Dubai Guides Tools</h3>
+                    <ul>
+                        <li><a href="https://www.dewa.gov.ae/en/builder/shams-dubai-guides-tools/harmonic-assessment-hab-reeh">Harmonic Assessment (Hab-Reeh)</a></li>
+                        <li><a href="https://www.dewa.gov.ae/en/builder/shams-dubai-guides-tools/enroll-as-drrg-solar-pv-consultant-and-contractor">DRRG Solar PV Consultants &amp; Contractors Enrollment</a></li>
+                        <li><a href="https://www.dewa.gov.ae/en/consumer/solar-community/enrolled-contractors-consultants">Enrolled Solar PV Consultants &amp; Contractors</a></li>
+                        <li><a href="https://www.dewa.gov.ae/en/builder/shams-dubai-guides-tools/pv-equipment-eligibility">Solar PV Equipment Eligibility</a></li>
+                        <li><a href="https://www.dewa.gov.ae/en/builder/shams-dubai-guides-tools/shams-consultant-and-constructors">Shams Dubai for Consultants &amp; Contractors</a></li>
+                        <li><a href="https://www.dewa.gov.ae/en/consumer/solar-community/solar-calc">Shams Dubai Calculator</a></li>
+                        <li><a href="https://www.dewa.gov.ae/en/consumer/solar-community/shams-dubai/new-request">Shams Dubai Newsletter Subscription</a></li>
+                    </ul>
+                </article>
+
+                <article class="trending-card">
+                    <h3>Technical Discussion Support</h3>
+                    <ul>
+                        <li><a href="https://crm.dewa.gov.ae/irj/portal/anonymous/techdiscr">Request Call Back</a></li>
+                        <li><a href="https://crm.dewa.gov.ae/irj/portal/anonymous/techdiscr">Request Email</a></li>
+                        <li><a href="https://crm.dewa.gov.ae/irj/portal/anonymous/techdiscr">Request SMS</a></li>
+                        <li><a href="https://crm.dewa.gov.ae/irj/portal/anonymous/techdiscr">Request Online Meeting</a></li>
+                        <li><a href="https://crm.dewa.gov.ae/irj/portal/anonymous/techdiscr">Interaction with Engineer</a></li>
+                    </ul>
+                </article>
+
+                <article class="trending-card">
+                    <h3>Useful Links &amp; Guides</h3>
+                    <ul>
+                        <li><a href="https://www.dewa.gov.ae/en/builder/useful-tools/dewa-circulars">DEWA Circulars &amp; Regulations</a></li>
+                        <li><a href="https://www.dewa.gov.ae/en/builder/useful-tools/regulatory-framework-for-ev-charging-infrastructure">Regulatory Framework for EV Charging Infrastructure</a></li>
+                        <li><a href="https://www.dewa.gov.ae/-/media/Files/Consultants-and-Contractors/Contractors-and-Consultants-Guide.ashx">Consultants &amp; Contractor Law no. (6) Guide</a></li>
+                        <li><a href="https://www.dewa.gov.ae/en/builder/useful-tools/contractors-list">Enrolled Electricity Fit-Out Consultants &amp; Contractors</a></li>
+                        <li><a href="https://www.dewa.gov.ae/en/builder/useful-tools/Approved-Distribution-11KV-Substation">List of approved private contractors for substation installation</a></li>
+                        <li><a href="https://www.dewa.gov.ae/en/builder/useful-tools/Approved-Distribution-11KV-33KV">Approved list of contractors for private cable laying works</a></li>
+                        <li><a href="https://www.dewa.gov.ae/en/about-us/service-guide/builder-services">DEWA Service Guide</a></li>
+                        <li><a href="https://www.dewa.gov.ae/en/builder/useful-tools/registration-contractor-and-consultant-services">Builder Enrolment</a></li>
+                        <li><a href="https://www.dewa.gov.ae/en/builder/useful-tools/builder-enrollment-guide">Builder Enrollment Guide</a></li>
+                        <li><a href="https://crm.dewa.gov.ae/irj/portal/anonymous/consultantclassification">Consultants &amp; Contractors Classification</a></li>
+                        <li><a href="https://www.dewa.gov.ae/en/builder/useful-tools/soqoor-program">SOQOOR Programme</a></li>
+                        <li><a href="https://www.dewa.gov.ae/en/builder/useful-tools/ownek-initiative">Ownek Initiative</a></li>
+                        <li><a href="https://www.dewa.gov.ae/en/builder/useful-tools/tech-publications-resources">Technical Publications &amp; Resources</a></li>
+                        <li><a href="https://www.dewa.gov.ae/en/builder/useful-tools/majors-projects">Major Project Guidelines</a></li>
+                        <li><a href="https://www.dewa.gov.ae/en/builder/useful-tools/user-manual">Technical User Manuals</a></li>
+                        <li><a href="https://www.dewa.gov.ae/en/builder/useful-tools/ehv-protective-regulations">EHV protective regulations</a></li>
+                        <li><a href="https://www.dewa.gov.ae/en/builder/useful-tools/forms">Forms</a></li>
+                        <li><a href="https://www.dewa.gov.ae/en/builder/useful-tools/green-building">Green Buildings</a></li>
+                        <li><a href="https://www.dewa.gov.ae/en/builder/useful-tools/electricity-installations-regulations">Electricity Installations Regulations</a></li>
+                        <li><a href="https://www.dewa.gov.ae/-/media/Files/Consultants-and-Contractors/SAFETY-AND-PROTECTION-GUIDELINES.ashx">Safety and Protection Guidelines - Distribution MV Network</a></li>
+                        <li><a href="https://www.dewa.gov.ae/en/owner-tracking/dashboard">Track Applications for Project Owners</a></li>
+                        <li><a href="https://www.dewa.gov.ae/en/builder/useful-tools/frequently-asked-questions">Frequently Asked Questions &amp; Tutorial Videos</a></li>
+                        <li><a href="https://www.dewa.gov.ae/-/media/Files/Customer/Scrap-Sales-Registration-and-Update-Guide.ashx">Scrap Sales - Registration &amp; Update Profile Guide</a></li>
+                        <li><a href="https://www.dewa.gov.ae/-/media/Files/Builder/Jointer-Certification--Testing-Services--Registration--Update-Profile-Guide.ashx">Jointer Certification &amp; Testing Services - Registration &amp; Update Profile Guide</a></li>
+                    </ul>
+                </article>
+
+                <article class="trending-card">
+                    <h3>D33 Industry Friendly Power Policy</h3>
+                    <ul>
+                        <li><a href="https://www.dewa.gov.ae/en/consumer/solar-community/d33-industry-friendly-power-policy">D33 Industry Friendly Power Policy</a></li>
+                        <li><a href="https://www.dewa.gov.ae/en/consumer/solar-community/d33-solar-pv-initiative">D33 Solar PV Initiative</a></li>
+                        <li><a href="https://www.dewa.gov.ae/en/consumer/solar-community/d33-industry-friendly-power-policy-faqs">D33 Industry Friendly Power Policy FAQs</a></li>
+                        <li><a href="https://www.dewa.gov.ae/en/consumer/solar-community/International-renewable-certificates">International Renewable Certificates (i-RECs)</a></li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- ENGAGE WITH US -->
+
+    <section class="engage-section" aria-labelledby="engage-title">
+        <div class="container engage-grid">
+            <div class="engage-copy">
+                <span class="section-label">ENGAGE WITH US</span>
+                <h2 id="engage-title">Your voice matters. Let's improve together.</h2>
+                <p>We'll resolve your complaint and respond to your suggestions and comments within 3 working days.</p>
+                <a class="engage-button" href="https://04.gov.ae/case-generate?entity=c3f2f61a-bc06-ec11-b6e5-0022486fc780&amp;lang=en">Share your feedback <span class="material-icons" aria-hidden="true">arrow_forward</span></a>
+            </div>
+
+            <a class="engage-card" href="https://04.gov.ae/case-generate?entity=c3f2f61a-bc06-ec11-b6e5-0022486fc780&amp;lang=en">
+                <span class="material-icons" aria-hidden="true">forum</span>
+                <div>
+                    <h3>Your Voice Matters</h3>
+                    <p>By sharing your suggestions, comments and complaints, you help us continuously improve our services.</p>
+                </div>
+                <span class="material-icons engage-arrow" aria-hidden="true">arrow_forward</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- NEWS AND PODCAST -->
+
+    <section class="news-section" aria-labelledby="news-title">
+        <div class="container">
+            <div class="news-heading">
+                <div><span class="section-label">MEDIA CENTRE</span><h2 id="news-title">News &amp; Podcast</h2></div>
+                <a href="https://www.dewa.gov.ae/en/about-us/media-publications/latest-news">View all news <span class="material-icons" aria-hidden="true">arrow_forward</span></a>
+            </div>
+
+            <div class="news-grid">
+                <a class="podcast-card" href="https://www.dewa.gov.ae/en/about-us/media-publications/latest-news">
+                    <span class="podcast-label"><span class="material-icons" aria-hidden="true">play_circle</span> Podcast</span>
+                    <div class="podcast-content"><time datetime="2026-08-11">11 Aug 2026</time><h3>DEWA Digest</h3><p>Listen to the latest stories, achievements and sustainability updates from DEWA.</p><span class="listen-link">Play episode <span class="material-icons" aria-hidden="true">arrow_forward</span></span></div>
+                </a>
+
+                <div class="news-list">
+                    <a class="news-card" href="https://www.dewa.gov.ae/en/about-us/media-publications/latest-news/2026/9/chinese-companies-at-wetex-2026"><time datetime="2026-09-01">01 Sep 2026</time><h3>Chinese Companies at WETEX 2026: The Exhibition provides ideal gateway to UAE and region's markets</h3><span class="material-icons" aria-hidden="true">arrow_forward</span></a>
+                    <a class="news-card" href="https://www.dewa.gov.ae/en/about-us/media-publications/latest-news/2026/8/dewa-develops-a-standardised-digital"><time datetime="2026-08-31">31 Aug 2026</time><h3>DEWA develops a standardised digital design for 132kV substations</h3><span class="material-icons" aria-hidden="true">arrow_forward</span></a>
+                    <a class="news-card" href="https://www.dewa.gov.ae/en/about-us/media-publications/latest-news/2026/8/he-saeed-mohammed-al-tayer"><time datetime="2026-08-30">30 Aug 2026</time><h3>HE Saeed Mohammed Al Tayer reviews pioneering projects at DEWA's Distribution Power complex</h3><span class="material-icons" aria-hidden="true">arrow_forward</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INFO SECTION -->
+
+    <section class="info-section">
+        <div class="container info-grid">
+            <div>
+                <span class="section-label">BUILDER EXPERIENCE</span>
+                <h2>One digital journey from application to connection</h2>
+                <p>Submit technical applications, follow approvals and manage project services through secure DEWA digital channels.</p>
+            </div>
+            <div class="info-card">
+                <span class="material-icons">accessibility_new</span>
+                <h3>Support at every stage</h3>
+                <p>Find technical guides, request a discussion with an engineer and track applications from one convenient place.</p>
+            </div>
+        </div>
+    </section>
+
+
+</main>
+
+
+<!-- OFFICIAL DUBAI DESIGN SYSTEM FOOTER -->
+
+<dda-footer
+    footer-title="Stay connected with DEWA"
+    description="Get the latest updates, services and sustainability news."
+    sign-up-button-text="Newsletter subscription"
+    login-button-text="Sign in"
+    logo-src="https://www.dof.gov.ae/Style Library/img/gov-logo.svg"
+    logo-alt="Government of Dubai"
+    copyright-text="© 2026 Dubai Electricity &amp; Water Authority (PJSC). All Rights Reserved."
+    footer-sections='[
+        {
+            "title": "Services",
+            "links": [
+                {"label": "DEWA Service Guide", "href": "https://www.dewa.gov.ae/en/about-us/service-guide/builder-services"},
+                {"label": "Builder Enrolment", "href": "https://www.dewa.gov.ae/en/builder/useful-tools/registration-contractor-and-consultant-services"},
+                {"label": "Track Applications", "href": "https://www.dewa.gov.ae/en/owner-tracking/dashboard"}
+            ]
+        },
+        {
+            "title": "Support",
+            "links": [
+                {"label": "Contact Us", "href": "https://www.dewa.gov.ae/en/about-us/contact-us"},
+                {"label": "Frequently Asked Questions", "href": "https://www.dewa.gov.ae/en/builder/useful-tools/frequently-asked-questions"},
+                {"label": "Your Voice Matters", "href": "https://04.gov.ae/case-generate?entity=c3f2f61a-bc06-ec11-b6e5-0022486fc780&amp;lang=en"}
+            ]
+        },
+        {
+            "title": "About DEWA",
+            "links": [
+                {"label": "About Us", "href": "https://www.dewa.gov.ae/en/about-us"},
+                {"label": "News &amp; Podcast", "href": "https://www.dewa.gov.ae/en/about-us/media-publications/latest-news"},
+                {"label": "Careers", "href": "https://www.dewa.gov.ae/en/about-us/careers"}
+            ]
+        },
+        {
+            "title": "Policies",
+            "links": [
+                {"label": "Privacy &amp; Security", "href": "https://www.dewa.gov.ae/en/privacy-policy"},
+                {"label": "Terms &amp; Conditions", "href": "https://www.dewa.gov.ae/en/terms-and-conditions"},
+                {"label": "Sitemap", "href": "https://www.dewa.gov.ae/en/sitemap"}
+            ]
+        }
+    ]'
+    social-icons='[]'
+></dda-footer>
+
+
+<!-- DEWA-STYLE PARTNER AND LEGAL FOOTER -->
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="partner-logos" aria-label="Partner organizations">
+            <a class="partner-mark" href="https://sheikhmohammed.ae/en-us"><img src="https://www.dewa.gov.ae/-/media/Images/Header-and-Footer/Footer/HH-Logo.ashx?la=en&amp;hash=B02E3B11C5EFE19CE8D5A6699913EDFF" alt="HH Sheikh Mohammed bin Rashid website"></a>
+            <a class="partner-mark" href="https://alameen.gov.ae/"><img src="https://www.dewa.gov.ae/-/media/Images/Header-and-Footer/Footer/logoalameen2x.ashx?la=en&amp;hash=0071D10A8AABA6EED3A318A04078509E" alt="Al Ameen"></a>
+            <a class="partner-mark" href="https://u.ae/en/#/"><img src="https://www.dewa.gov.ae/-/media/Images/ae3fffe9-1482-41d7-a8df-52962e3739dc_government-ae-logo-english.ashx?la=en&amp;hash=B6377E819D1596C86F85FFA052A36CD5" alt="Official Portal of the UAE Government"></a>
+            <a class="partner-mark" href="https://data.dubai/en/"><img src="https://www.dewa.gov.ae/-/media/Images/Header-and-Footer/Footer/Dubai-Pulse-Logo_optimized.ashx?la=en&amp;hash=89DEB09314B347D8CBA2041B2B7C821E" alt="Dubai Data and Statistics"></a>
+            <a class="partner-mark" href="http://www.mbrgcec.ae/language/en"><img src="https://www.dewa.gov.ae/-/media/Images/DSCEAssets/images/footer/Mohammed-Bin-Rashid-Global-Centre-for-Endowment-Consultancy.ashx?la=en&amp;hash=FA994282AAAD02DF56AF65DA1760D94E" alt="Mohammed Bin Rashid Global Centre for Endowment Consultancy"></a>
+        </div>
+
+        <div class="footer-links-row">
+            <nav class="footer-utility-links" aria-label="Footer links">
+                <a href="https://www.dewa.gov.ae/en/sitemap">Sitemap</a>
+                <a href="https://www.dewa.gov.ae/en/website-survey">Website Survey</a>
+                <a href="https://www.dewa.gov.ae/en/about-us/careers/the-workplace-and-careers">The Workplace &amp; Careers</a>
+                <a href="https://www.dewa.gov.ae/en/about-us/contact-us/dewa-customer-happiness-centres">Customer Happiness Centres (Self-Service)</a>
+                <a href="https://www.dewa.gov.ae/en/about-us/contact-us/customer-care-centre-services">Customer Care Centre Services</a>
+                <a href="https://www.dewa.gov.ae/en/security-e-pass">Security E-Pass</a>
+            </nav>
+
+            <nav class="social-links" aria-label="Social media">
+                <a href="https://x.com/dewaofficial" aria-label="X">X</a>
+                <a href="https://www.facebook.com/dewaofficial" aria-label="Facebook">f</a>
+                <a href="https://www.instagram.com/dewaofficial/" aria-label="Instagram">◎</a>
+                <a href="https://www.youtube.com/user/dewaofficial" aria-label="YouTube">▶</a>
+                <a href="https://www.linkedin.com/company/dewaofficial/" aria-label="LinkedIn">in</a>
+            </nav>
+        </div>
+
+        <div class="footer-legal">
+            <div>
+                <p>© 2026 Dubai Electricity &amp; Water Authority (PJSC). All Rights Reserved.</p>
+                <p>This site is best viewed using Edge, Mozilla Firefox, Safari, and Chrome</p>
+                <p>Last update on 4 September 2026</p>
+            </div>
+            <nav aria-label="Legal links">
+                <a href="https://www.dewa.gov.ae/en/privacy-policy">Privacy &amp; Security Policy</a>
+                <a href="https://www.dewa.gov.ae/en/terms-and-conditions">Terms &amp; Conditions</a>
+            </nav>
+        </div>
+    </div>
+</footer>
+
+
+<!-- DEWA BOTTOM UTILITY BAR -->
+
+<nav class="dewa-utility-dock" aria-label="Quick access">
+    <div class="dock-left">
+        <a class="dock-icon-only" href="https://www.dewa.gov.ae/en/about-us/dewa-digital-journey/happiness" aria-label="Happiness"><span class="material-icons">sentiment_satisfied</span></a>
+        <a class="dock-icon-only dock-04" href="https://04.gov.ae/case-generate?entity=c3f2f61a-bc06-ec11-b6e5-0022486fc780&amp;lang=en" aria-label="Dubai 04"><img src="https://www.dewa.gov.ae/images/04.svg" alt=""></a>
+        <a href="https://www.dewa.gov.ae/en/about-us/service-guide/builder-services"><span class="material-icons">grid_view</span><span>Services</span></a>
+    </div>
+
+    <div class="dock-right">
+        <a href="https://www.dewa.gov.ae/en/about-us/contact-us/dewa-customer-happiness-centres"><span class="material-icons dock-muted">location_on</span><span>Locations</span></a>
+        <a href="https://www.dewa.gov.ae/en/about-us/contact-us"><span class="material-icons dock-muted">headset_mic</span><span>Support</span></a>
+        <a class="dock-wordmark" href="https://www.dubai.ae/"><img src="https://www.dewa.gov.ae/-/media/Images/M74Expander/fulldubaiaefooter.ashx?la=en&amp;hash=77367ED512A37CD7868181EE41EA910C" alt="dubai.ae"></a>
+        <a class="dock-ai" href="https://chat.dubai.ae/" aria-label="Dubai AI"><img src="https://www.dewa.gov.ae/-/media/Images/M74Expander/dubaiaifooter.ashx?la=en&amp;hash=D5475A33533CDD181B93E44FA1C5ED52" alt="Dubai AI"></a>
+        <a class="dock-rammas" href="https://www.dewa.gov.ae/en/rammas-chatgpt"><img class="rammas-mark" src="https://www.dewa.gov.ae/~/media/Images/M74Expander/rammas_icon.ashx" alt=""><span><strong>Rammas</strong><small>Powered by GPT</small></span></a>
+    </div>
+</nav>
+
+
+
+<!-- OUR VANILLA JAVASCRIPT -->
+
+<script src="./script.js"></script>
+
+
+</body>
+
+</html>
