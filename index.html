@@ -17,7 +17,7 @@
 
     <link
         rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/@dubai-design-system/components-js@3.11.0/dist/dda/dda.css"
+        href="https://cdn.jsdelivr.net/npm/@dubai-design-system/components-js@3.12.16/dist/dda/dda.css"
     >
 
 
@@ -38,7 +38,7 @@
 
     <link
         rel="stylesheet"
-        href="./style.css"
+        href="./style.css?v=20260907-align-all"
     >
 
 
@@ -49,7 +49,7 @@
     <script type="module">
 
         import { defineCustomElements }
-        from "https://cdn.jsdelivr.net/npm/@dubai-design-system/components-js@3.11.0/loader/index.es2017.js";
+        from "https://cdn.jsdelivr.net/npm/@dubai-design-system/components-js@3.12.16/loader/index.es2017.js";
 
         defineCustomElements();
 
@@ -519,7 +519,7 @@
         <div class="container hero-content">
 
             <span class="hero-label">
-                DUBAI ELECTRICITY &amp; WATER AUTHORITY
+                DUBAI ELECTRICITY & WATER AUTHORITY
             </span>
 
             <h1>
@@ -527,18 +527,21 @@
             </h1>
 
             <p>
-                A simple Vanilla JavaScript starter using the Dubai Design System reusable components.
+                A simple Vanilla JavaScript starter using the
+                Dubai Design System reusable components.
             </p>
 
             <div class="hero-actions">
 
-                <button class="primary-button"
+                <button
+                    class="primary-button"
                     id="exploreButton"
                 >
                     Explore Services
                 </button>
 
-                <button class="secondary-button"
+                <button
+                    class="secondary-button"
                     id="learnMoreButton"
                 >
                     Learn More
@@ -551,129 +554,8 @@
     </section>
 
 
-    <!-- SERVICES -->
 
-    <section
-        class="services-section"
-        id="services"
-    >
-
-        <div class="container">
-
-            <div class="section-heading">
-
-                <span class="section-label">
-                    SERVICES
-                </span>
-
-                <h2>
-                    Quick access
-                </h2>
-
-                <p>
-                    Access frequently used services quickly and easily.
-                </p>
-
-            </div>
-
-
-            <div class="service-grid">
-
-
-                <article class="service-card">
-
-                    <div class="service-icon">
-                        <span class="material-icons">
-                            bolt
-                        </span>
-                    </div>
-
-                    <h3>
-                        Electricity
-                    </h3>
-
-                    <p>
-                        Access electricity related services.
-                    </p>
-
-                    <a href="#">
-                        View services
-                        <span class="material-icons">
-                            arrow_forward
-                        </span>
-                    </a>
-
-                </article>
-
-
-
-                <article class="service-card">
-
-                    <div class="service-icon blue">
-
-                        <span class="material-icons">
-                            water_drop
-                        </span>
-
-                    </div>
-
-                    <h3>
-                        Water
-                    </h3>
-
-                    <p>
-                        Access water related services.
-                    </p>
-
-                    <a href="#">
-                        View services
-
-                        <span class="material-icons">
-                            arrow_forward
-                        </span>
-                    </a>
-
-                </article>
-
-
-
-                <article class="service-card">
-
-                    <div class="service-icon bronze">
-
-                        <span class="material-icons">
-                            receipt_long
-                        </span>
-
-                    </div>
-
-                    <h3>
-                        Bills
-                    </h3>
-
-                    <p>
-                        View and manage billing services.
-                    </p>
-
-                    <a href="#">
-                        View services
-
-                        <span class="material-icons">
-                            arrow_forward
-                        </span>
-                    </a>
-
-                </article>
-
-
-
-            </div>
-
-        </div>
-
-    </section>
-
-
+    
 
     <!-- SERVICE LINK PANELS -->
 
@@ -686,130 +568,90 @@
                     <h3>Trending</h3>
                     <ul>
                         <li><a href="https://www.dewa.gov.ae/en/builder/useful-tools/soqoor-program">SOQOOR Programme</a></li>
-                        <li><a href="https://www.dewa.gov.ae/en/builder/electricity-network-services/getting-water-connection">Getting Water Connections</a></li>
-                        <li><a href="https://www.dewa.gov.ae/en/builder/master-plan-noc/infrastructure-noc-application">Infrastructure Projects No Objection Certificate</a></li>
-                        <li><a href="https://www.dewa.gov.ae/en/builder/useful-tools/registration-contractor-and-consultant-services">Builder Enrolment</a></li>
-                        <li><a href="https://www.dewa.gov.ae/en/owner-tracking/dashboard">Track Applications for Project Owners</a></li>
-                        <li><a href="https://www.dewa.gov.ae/en/about-us/service-guide/builder-services">DEWA Service Guide</a></li>
-                        <li><a href="https://www.dewa.gov.ae/en/builder/electricity-network-services/asraa">ASRA'A Initiative</a></li>
+                        <li><a href="https://www.dewa.gov.ae/en/builder/electricity-network-services/getting-water-connection" target="_blank">Getting Water Connections</a></li>
+                        <li><a href="https://www.dewa.gov.ae/en/builder/master-plan-noc/infrastructure-noc-application" target="_blank">Infrastructure Projects No Objection Certificate</a></li>
+                        <li><a href="https://www.dewa.gov.ae/en/builder" target="_blank" rel="noopener noreferrer">Builder</a></li>
+                        <li><a href="#">Track Applications for Project Owners</a></li>
+                        <li><a href="#">DEWA Service Guide</a></li>
                     </ul>
                 </article>
 
                 <article class="trending-card">
                     <h3>NOC Services</h3>
                     <ul>
-                        <li><a href="https://www.dewa.gov.ae/en/builder/master-plan-noc/malem-dubai">MA'LEM DUBAI</a></li>
-                        <li><a href="https://www.dewa.gov.ae/en/about-us/service-guide/builder-services/building-no-objection-certificate-water">Building No Objection Certificate - Water</a></li>
-                        <li><a href="https://www.dewa.gov.ae/en/builder/master-plan-noc/demolishing-noc-application">Demolishing Permits - Electricity/Water</a></li>
-                        <li><a href="https://www.dewa.gov.ae/en/builder/master-plan-noc/infrastructure-noc-application">Infrastructure Projects No Objection Certificate</a></li>
+                        <li><a href="#">MA'LEM DUBAI</a></li>
+                        <li><a href="#">Building No Objection Certificate - Water</a></li>
+                        <li><a href="#">Demolishing Permits - Electricity/Water</a></li>
+                        <li><a href="#">Infrastructure Projects No Objection Certificate</a></li>
                     </ul>
                 </article>
 
                 <article class="trending-card">
                     <h3>Water Network Services</h3>
                     <ul>
-                        <li><a href="https://www.dewa.gov.ae/en/builder/electricity-network-services/getting-water-connection">Getting Water Connections</a></li>
-                        <li><a href="https://www.dewa.gov.ae/en/builder/electricity-network-services/water-network-modification">Water Network Modification</a></li>
+                        <li><a href="#">Getting Water Connections</a></li>
+                        <li><a href="#">Water Network Modification</a></li>
                     </ul>
                 </article>
 
                 <article class="trending-card">
                     <h3>Electricity Network Services</h3>
                     <ul>
-                        <li><a href="https://www.dewa.gov.ae/en/builder/electricity-network-services/al-namoos">Al Namoos - Getting electricity service</a></li>
-                        <li><a href="https://www.dewa.gov.ae/en/builder/electricity-network-services/getting-electricity-permits-and-connections">Getting Electricity Permits &amp; Connections</a></li>
-                        <li><a href="https://www.dewa.gov.ae/en/builder/electricity-network-services/getting-electricity-fit-out-connections">Getting Electricity Fit-Out Connections</a></li>
-                        <li><a href="https://www.dewa.gov.ae/en/builder/electricity-network-services/electricity-network-modification">Electricity Network Modification</a></li>
-                        <li><a href="https://www.dewa.gov.ae/en/builder/electricity-network-services/electricity-connection-cost-calculator">Electricity Connection Cost Calculator</a></li>
-                        <li><a href="https://www.dewa.gov.ae/en/builder/electricity-network-services/apply-for-solar-pv-connections">Getting Solar Permits &amp; Connections</a></li>
-                        <li><a href="https://www.dewa.gov.ae/en/builder/electricity-network-services/asraa">ASRA'A Initiative</a></li>
+                        <li><a href="#">Getting Electricity Connections</a></li>
+                        <li><a href="#">Electricity Network Modification</a></li>
+                        <li><a href="#">Project Infrastructure Services</a></li>
                     </ul>
                 </article>
 
                 <article class="trending-card">
                     <h3>General Technical Services</h3>
                     <ul>
-                        <li><a href="https://www.dewa.gov.ae/en/builder/my-account/login">DEWA Generation Projects Document Submission</a></li>
-                        <li><a href="https://www.dewa.gov.ae/en/builder/general-technical-services/testing-services">Testing Services</a></li>
-                        <li><a href="https://www.dewa.gov.ae/en/builder/general-technical-services/infrastructure-projects-services">Infrastructure Projects Services</a></li>
-                        <li><a href="https://www.dewa.gov.ae/en/builder/general-technical-services/solar-pv-certification-training">Solar PV Certification Training</a></li>
-                        <li><a href="https://www.dewa.gov.ae/en/builder/general-technical-services/jointer-certification">Jointer Certification for DEWA Projects</a></li>
-                        <li><a href="https://www.dewa.gov.ae/en/scrap-sale">Scrap Sale</a></li>
+                        <li><a href="#">Builder Enrolment</a></li>
+                        <li><a href="#">Technical Service Requests</a></li>
+                        <li><a href="#">Track Project Applications</a></li>
                     </ul>
                 </article>
 
                 <article class="trending-card">
                     <h3>Estimate Payment &amp; Tracking</h3>
                     <ul>
-                        <li><a href="https://crm.dewa.gov.ae/irj/portal/anonymous/trackr">Track Connections Estimate Payment</a></li>
-                        <li><a href="https://crm.dewa.gov.ae/irj/portal/anonymous/estpayr">Connections Estimate Payment</a></li>
-                        <li><a href="https://crm.dewa.gov.ae/irj/portal/anonymous/esthistory">Connections Estimate History</a></li>
-                        <li><a href="https://www.dewa.gov.ae/en/consumer/my-account/bills-and-payments/estimate-payments">Estimate Payment, History and Refund (for Project Owners)</a></li>
-                        <li><a href="https://www.dewa.gov.ae/en/consumer/my-account/bills-and-payments/find-friends-estimate">Estimate Payment and History (for Friend)</a></li>
+                        <li><a href="#">Track Connections Estimate Payment</a></li>
+                        <li><a href="#">Connections Estimate Payment</a></li>
+                        <li><a href="#">Track Payment Status</a></li>
                     </ul>
                 </article>
 
                 <article class="trending-card">
-                    <h3>Shams Dubai Guides Tools</h3>
+                    <h3>Shams Dubai Guides &amp; Tools</h3>
                     <ul>
-                        <li><a href="https://www.dewa.gov.ae/en/builder/shams-dubai-guides-tools/harmonic-assessment-hab-reeh">Harmonic Assessment (Hab-Reeh)</a></li>
-                        <li><a href="https://www.dewa.gov.ae/en/builder/shams-dubai-guides-tools/enroll-as-drrg-solar-pv-consultant-and-contractor">DRRG Solar PV Consultants &amp; Contractors Enrollment</a></li>
-                        <li><a href="https://www.dewa.gov.ae/en/consumer/solar-community/enrolled-contractors-consultants">Enrolled Solar PV Consultants &amp; Contractors</a></li>
-                        <li><a href="https://www.dewa.gov.ae/en/builder/shams-dubai-guides-tools/pv-equipment-eligibility">Solar PV Equipment Eligibility</a></li>
-                        <li><a href="https://www.dewa.gov.ae/en/builder/shams-dubai-guides-tools/shams-consultant-and-constructors">Shams Dubai for Consultants &amp; Contractors</a></li>
-                        <li><a href="https://www.dewa.gov.ae/en/consumer/solar-community/solar-calc">Shams Dubai Calculator</a></li>
-                        <li><a href="https://www.dewa.gov.ae/en/consumer/solar-community/shams-dubai/new-request">Shams Dubai Newsletter Subscription</a></li>
+                        <li><a href="#">Shams Dubai Connection Guide</a></li>
+                        <li><a href="#">Solar PV Calculator</a></li>
+                        <li><a href="#">Contractors and Consultants</a></li>
                     </ul>
                 </article>
 
                 <article class="trending-card">
                     <h3>Technical Discussion Support</h3>
                     <ul>
-                        <li><a href="https://crm.dewa.gov.ae/irj/portal/anonymous/techdiscr">Request Call Back</a></li>
-                        <li><a href="https://crm.dewa.gov.ae/irj/portal/anonymous/techdiscr">Request Email</a></li>
-                        <li><a href="https://crm.dewa.gov.ae/irj/portal/anonymous/techdiscr">Request SMS</a></li>
-                        <li><a href="https://crm.dewa.gov.ae/irj/portal/anonymous/techdiscr">Request Online Meeting</a></li>
-                        <li><a href="https://crm.dewa.gov.ae/irj/portal/anonymous/techdiscr">Interaction with Engineer</a></li>
+                        <li><a href="#">Request a Technical Discussion</a></li>
+                        <li><a href="#">Track Support Request</a></li>
                     </ul>
                 </article>
 
                 <article class="trending-card">
                     <h3>Useful Links &amp; Guides</h3>
                     <ul>
-                        <li><a href="https://www.dewa.gov.ae/en/builder/useful-tools/dewa-circulars">DEWA Circulars &amp; Regulations</a></li>
-                        <li><a href="https://www.dewa.gov.ae/en/builder/useful-tools/regulatory-framework-for-ev-charging-infrastructure">Regulatory Framework for EV Charging Infrastructure</a></li>
-                        <li><a href="https://www.dewa.gov.ae/-/media/Files/Consultants-and-Contractors/Contractors-and-Consultants-Guide.ashx">Consultants &amp; Contractor Law no. (6) Guide</a></li>
-                        <li><a href="https://www.dewa.gov.ae/en/builder/useful-tools/contractors-list">Enrolled Electricity Fit-Out Consultants &amp; Contractors</a></li>
-                        <li><a href="https://www.dewa.gov.ae/en/builder/useful-tools/Approved-Distribution-11KV-Substation">List of approved private contractors for substation installation</a></li>
-                        <li><a href="https://www.dewa.gov.ae/en/builder/useful-tools/Approved-Distribution-11KV-33KV">Approved list of contractors for private cable laying works</a></li>
-                        <li><a href="https://www.dewa.gov.ae/en/about-us/service-guide/builder-services">DEWA Service Guide</a></li>
-                        <li><a href="https://www.dewa.gov.ae/en/builder/useful-tools/registration-contractor-and-consultant-services">Builder Enrolment</a></li>
-                        <li><a href="https://www.dewa.gov.ae/en/builder/useful-tools/builder-enrollment-guide">Builder Enrollment Guide</a></li>
-                        <li><a href="https://crm.dewa.gov.ae/irj/portal/anonymous/consultantclassification">Consultants &amp; Contractors Classification</a></li>
-                        <li><a href="https://www.dewa.gov.ae/en/builder/useful-tools/soqoor-program">SOQOOR Programme</a></li>
-                        <li><a href="https://www.dewa.gov.ae/en/builder/useful-tools/ownek-initiative">Ownek Initiative</a></li>
-                        <li><a href="https://www.dewa.gov.ae/en/builder/useful-tools/tech-publications-resources">Technical Publications &amp; Resources</a></li>
-                        <li><a href="https://www.dewa.gov.ae/en/builder/useful-tools/majors-projects">Major Project Guidelines</a></li>
-                        <li><a href="https://www.dewa.gov.ae/en/builder/useful-tools/user-manual">Technical User Manuals</a></li>
-                        <li><a href="https://www.dewa.gov.ae/en/builder/useful-tools/ehv-protective-regulations">EHV protective regulations</a></li>
-                        <li><a href="https://www.dewa.gov.ae/en/builder/useful-tools/forms">Forms</a></li>
-                        <li><a href="https://www.dewa.gov.ae/en/builder/useful-tools/green-building">Green Buildings</a></li>
-                        <li><a href="https://www.dewa.gov.ae/en/builder/useful-tools/electricity-installations-regulations">Electricity Installations Regulations</a></li>
-                        <li><a href="https://www.dewa.gov.ae/-/media/Files/Consultants-and-Contractors/SAFETY-AND-PROTECTION-GUIDELINES.ashx">Safety and Protection Guidelines - Distribution MV Network</a></li>
-                        <li><a href="https://www.dewa.gov.ae/en/owner-tracking/dashboard">Track Applications for Project Owners</a></li>
-                        <li><a href="https://www.dewa.gov.ae/en/builder/useful-tools/frequently-asked-questions">Frequently Asked Questions &amp; Tutorial Videos</a></li>
-                        <li><a href="https://www.dewa.gov.ae/-/media/Files/Customer/Scrap-Sales-Registration-and-Update-Guide.ashx">Scrap Sales - Registration &amp; Update Profile Guide</a></li>
-                        <li><a href="https://www.dewa.gov.ae/-/media/Files/Builder/Jointer-Certification--Testing-Services--Registration--Update-Profile-Guide.ashx">Jointer Certification &amp; Testing Services - Registration &amp; Update Profile Guide</a></li>
+                        <li><a href="#">Technical Guidelines</a></li>
+                        <li><a href="#">Forms and Documents</a></li>
+                        <li><a href="#">Frequently Asked Questions</a></li>
                     </ul>
                 </article>
 
                 <article class="trending-card">
                     <h3>D33 Industry Friendly Power Policy</h3>
                     <ul>
-                        <li><a href="https://www.dewa.gov.ae/en/consumer/solar-community/d33-industry-friendly-power-policy">D33 Industry Friendly Power Policy</a></li>
-                        <li><a href="https://www.dewa.gov.ae/en/consumer/solar-community/d33-solar-pv-initiative">D33 Solar PV Initiative</a></li>
-                        <li><a href="https://www.dewa.gov.ae/en/consumer/solar-community/d33-industry-friendly-power-policy-faqs">D33 Industry Friendly Power Policy FAQs</a></li>
-                        <li><a href="https://www.dewa.gov.ae/en/consumer/solar-community/International-renewable-certificates">International Renewable Certificates (i-RECs)</a></li>
+                        <li><a href="#">Policy Overview</a></li>
+                        <li><a href="#">Eligibility and Applications</a></li>
                     </ul>
                 </article>
             </div>
@@ -820,64 +662,296 @@
 
     <!-- ENGAGE WITH US -->
 
-    <section class="engage-section" aria-labelledby="engage-title">
-        <div class="container engage-grid">
+    <section class="engage-section">
+
+        <div class="container widthofthefield" style="max-width: 90%;">
+
             <div class="engage-copy">
-                <span class="section-label">ENGAGE WITH US</span>
-                <h2 id="engage-title">Your voice matters. Let's improve together.</h2>
-                <p>We'll resolve your complaint and respond to your suggestions and comments within 3 working days.</p>
-                <a class="engage-button" href="https://04.gov.ae/case-generate?entity=c3f2f61a-bc06-ec11-b6e5-0022486fc780&amp;lang=en">Share your feedback <span class="material-icons" aria-hidden="true">arrow_forward</span></a>
+
+                <h2><strong>Engage with Us</strong></h2>
+
+                <p style="font-size: 14px;">Your voice matters. Let&rsquo;s improve together.</p>
+
+                <p style="font-size: 14px;">We&rsquo;ll resolve your complaint and respond to your suggestions and comments within <strong>3 working days.</strong></p>
+
             </div>
 
-            <a class="engage-card" href="https://04.gov.ae/case-generate?entity=c3f2f61a-bc06-ec11-b6e5-0022486fc780&amp;lang=en">
-                <span class="material-icons" aria-hidden="true">forum</span>
-                <div>
-                    <h3>Your Voice Matters</h3>
-                    <p>By sharing your suggestions, comments and complaints, you help us continuously improve our services.</p>
+            <a class="engage-card" href="https://04.gov.ae/case-generate?entity=c3f2f61a-bc06-ec11-b6e5-0022486fc780&amp;lang=en" target="_blank" rel="noopener noreferrer">
+
+                <div class="engage-logo">
+                    <div class="engage-brand" aria-label="04 unified suggestions portal">
+                    </div>
                 </div>
-                <span class="material-icons engage-arrow" aria-hidden="true">arrow_forward</span>
+
+                <div class="engage-card-copy">
+                    <h3 class="teaser__title" data-original-f-s="24px" style="font-size: 24px;">Your Voice Matters</h3>
+                    <p class="m7-teaser__copy teaser__copy" data-original-f-s="18px" style="font-size: 18px;">By sharing your suggestions, comments, and complaints we can continuously improve our services</p>
+                </div>
+
             </a>
+
         </div>
+
     </section>
 
-    <!-- NEWS AND PODCAST -->
-
-    <section class="news-section" aria-labelledby="news-title">
-        <div class="container">
-            <div class="news-heading">
-                <div><span class="section-label">MEDIA CENTRE</span><h2 id="news-title">News &amp; Podcast</h2></div>
-                <a href="https://www.dewa.gov.ae/en/about-us/media-publications/latest-news">View all news <span class="material-icons" aria-hidden="true">arrow_forward</span></a>
+    <!--nNEWS SECTION -->
+    
+    <div class="box box--news" data-original-f-s="16px" style="font-size: 16px;">
+    <div class="grid" data-original-f-s="16px" style="font-size: 16px;">
+            <div class="grid__row" data-original-f-s="16px" style="font-size: 16px;">
+                <div class="grid__column grid__column--12" data-original-f-s="16px" style="font-size: 16px;">
+                    <div class="m17-sectiontitle " data-component="m17-sectiontitle" data-original-f-s="16px" style="font-size: 16px;">
+                        <h3 class="m17-sectiontitle__title  text__section-title" data-original-f-s="32px" style="font-size: 32px;">News &amp; Podcast</h3>
+                        <a class="m17-sectiontitle__cta button button--text mobile-hide button--next" href="https://www.dewa.gov.ae/en/about-us/media-publications/latest-news" data-original-f-s="16px" style="font-size: 16px;">View All News</a>
+                    </div>
+                </div>
             </div>
 
-            <div class="news-grid">
-                <a class="podcast-card" href="https://www.dewa.gov.ae/en/about-us/media-publications/latest-news">
-                    <span class="podcast-label"><span class="material-icons" aria-hidden="true">play_circle</span> Podcast</span>
-                    <div class="podcast-content"><time datetime="2026-08-11">11 Aug 2026</time><h3>DEWA Digest</h3><p>Listen to the latest stories, achievements and sustainability updates from DEWA.</p><span class="listen-link">Play episode <span class="material-icons" aria-hidden="true">arrow_forward</span></span></div>
+        <div class="m122-news" data-component="m122-news" data-original-f-s="16px" style="font-size: 16px;">
+            <div class="grid__row" data-original-f-s="16px" style="font-size: 16px;">
+                <!--- Video comes here start-->
+                
+
+    <div class="grid__column grid__column--6" data-original-f-s="16px" style="font-size: 16px;">
+        <div class="m122-news--weekly" data-news-date="11 Aug 2026" data-news-title="DEWA Digest" data-news-video="&lt;iframe width=&quot;100%&quot; height=&quot;100%&quot; src=&quot;https://www.youtube.com/embed/S_bnOezzNSk?si=dfYoh1CadVh5q_rm rel=0&amp;modestbranding=1&amp;hl=ar&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;" data-original-f-s="16px" style="font-size: 16px;">
+            <a class="m122-news--weekly_img" href="https://www.youtube.com/watch?v=S_bnOezzNSk" target="_blank" rel="noopener noreferrer" style="background-image: url(&quot;https://www.dewa.gov.ae/-/media/Images/DEWA-revamp/Youtube-preview-Image/weekly-news.ashx&quot;); font-size: 16px;" data-original-f-s="16px">
+                <span class="m122-news--weekly_btn" data-original-f-s="16px" style="font-size: 16px;">
+                    <span class="aria-only" data-original-f-s="16px" style="font-size: 16px;">
+                        Play Video
+                    </span>
+                </span>
+            </a>
+            <div class="m122-news--weekly_date" data-original-f-s="16px" style="font-size: 16px;">
+                11 Aug 2026                
+            </div>
+            <div class="m122-news--weekly_title" data-original-f-s="24px" style="font-size: 24px;">
+                DEWA Digest
+            </div>
+            <div class="m122-news--weekly_desc" data-original-f-s="16px" style="font-size: 16px;">
+                DEWA Women’s Committee organised 15 events in first half of 2026, 
+Al Shera’a strengthens global sustainability leadership with LEED platinum certification for New Construction category, 
+DEWA’s IWPP model earns Seven-Star recognition and attracts over <span class="dirham-symbol" data-original-f-s="10.08px" style="font-size: 10.08px;">D</span> 47.4 Billion in investments, 
+DEWA’s Youth Council teams up with Dubai Culture to foster creative and practical skills. 
+#DEWANews
+            </div>
+        </div>
+    </div>
+
+                <!-- Video comes here end-->
+                    <div class="grid__column grid__column--6" data-original-f-s="16px" style="font-size: 16px;">
+                        <div class="m122-news--list" data-original-f-s="16px" style="font-size: 16px;">
+                                    <a href="https://www.dewa.gov.ae/en/about-us/media-publications/latest-news/2026/9/chinese-companies-at-wetex-2026" class="m122-news--item" data-original-f-s="16px" style="font-size: 16px;">
+                                        <div class="m122-news--item_img" style="background-image: url(&quot;https://www.dewa.gov.ae/-/media/news/3-september-2026.ashx&quot;); font-size: 16px;" data-original-f-s="16px"></div>
+                                        <div class="m122-news--item_details" data-original-f-s="16px" style="font-size: 16px;">
+                                            <div class="m122-news--item_date" data-original-f-s="16px" style="font-size: 16px;">
+01 Sep 2026                                            </div>
+                                            <div class="m122-news--item_title" data-original-f-s="20px" style="font-size: 20px;">
+Chinese Companies at WETEX 2026: The Exhibition provides ideal gateway to UAE and region’s markets                                            </div>
+                                            <div class="m122-news--item_desc" data-original-f-s="16px" style="font-size: 16px;">
+Under the directives of HH Sheikh Mohammed bin Rashid Al Maktoum, Vice President and Prime Minister of the UAE and Ruler of Dubai, and the patronage of HH Sheikh Ahmed bin Saeed Al Maktoum, Chairman of the Dubai Supreme Council of Energy, Dubai Electricity and Water Authority (DEWA) is organising the 28th Water, Energy, Technology and Environment Exhibition (WETEX) from 20 to 22 October 2026 at the Dubai World Trade Centre.                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="https://www.dewa.gov.ae/en/about-us/media-publications/latest-news/2026/8/dewa-develops-a-standardised-digital" class="m122-news--item" data-original-f-s="16px" style="font-size: 16px;">
+                                        <div class="m122-news--item_img" style="background-image: url(&quot;https://www.dewa.gov.ae/-/media/news/31aug2026B.ashx&quot;); font-size: 16px;" data-original-f-s="16px"></div>
+                                        <div class="m122-news--item_details" data-original-f-s="16px" style="font-size: 16px;">
+                                            <div class="m122-news--item_date" data-original-f-s="16px" style="font-size: 16px;">
+31 Aug 2026                                            </div>
+                                            <div class="m122-news--item_title" data-original-f-s="20px" style="font-size: 20px;">
+DEWA develops a standardised digital design for 132kV substations, enhancing efficiency and accelerating execution of power transmission projects                                            </div>
+                                            <div class="m122-news--item_desc" data-original-f-s="16px" style="font-size: 16px;">
+Dubai Electricity and Water Authority (DEWA) has developed a standardised and digitally optimised design for 132kV substations as part of its efforts to enhance the efficiency and resilience of Dubai's electricity infrastructure and keep pace with the rapid growth in energy demand while                                             </div>
+                                        </div>
+                                    </a>
+                                    <a href="https://www.dewa.gov.ae/en/about-us/media-publications/latest-news/2026/8/he-saeed-mohammed-al-tayer" class="m122-news--item" data-original-f-s="16px" style="font-size: 16px;">
+                                        <div class="m122-news--item_img" style="background-image: url(&quot;https://www.dewa.gov.ae/-/media/news/31aug2026A.ashx&quot;); font-size: 16px;" data-original-f-s="16px"></div>
+                                        <div class="m122-news--item_details" data-original-f-s="16px" style="font-size: 16px;">
+                                            <div class="m122-news--item_date" data-original-f-s="16px" style="font-size: 16px;">
+30 Aug 2026                                            </div>
+                                            <div class="m122-news--item_title" data-original-f-s="20px" style="font-size: 20px;">
+HE Saeed Mohammed Al Tayer reviews pioneering projects at DEWA’s Distribution Power complex in Al Ruwayyah                                            </div>
+                                            <div class="m122-news--item_desc" data-original-f-s="16px" style="font-size: 16px;">
+HE Saeed Mohammed Al Tayer, MD and CEO of Dubai Electricity and Water Authority (DEWA), toured the Distribution Power division’s complex in Al Ruwayyah to review a range of innovative projects and initiatives enhancing the reliability, efficiency and sustainability of Dubai’s electricity distribution network. Al Tayer was accompanied by Rashid Bin Humaidan, Executive Vice President of Distribution Power, and senior DEWA staff.                                            </div>
+                                        </div>
+                                    </a>
+                        </div>
+                    </div>
+            </div>
+            <div class="m122-news--modal" data-original-f-s="16px" style="font-size: 16px;">
+                <div class="m122-news--modal_inner" data-original-f-s="16px" style="font-size: 16px;">
+                    <div class="m122-news--modal_header" data-original-f-s="16px" style="font-size: 16px;">
+                        <div class="m122-news--modal_title" data-original-f-s="32px" style="font-size: 32px;">DEWA Digest</div>
+                        <div class="m122-news--modal_date" data-original-f-s="16px" style="font-size: 16px;">11 Aug 2026</div>
+                        <button class="m122-news--modal_close" data-original-f-s="16px" style="font-size: 16px;">
+                            <span class="aria-only" data-original-f-s="16px" style="font-size: 16px;">Close</span>
+                        </button>
+                    </div>
+                    <div class="m122-news--modal_content" data-original-f-s="16px" style="font-size: 16px;"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/S_bnOezzNSk?si=dfYoh1CadVh5q_rm rel=0&amp;modestbranding=1&amp;hl=ar" frameborder="0" allowfullscreen="" data-original-f-s="16px" style="font-size: 16px;"></iframe></div>
+                    <div class="m122-news--modal_footer" data-original-f-s="16px" style="font-size: 16px;">
+                        DEWA Women’s Committee organised 15 events in first half of 2026, 
+Al Shera’a strengthens global sustainability leadership with LEED platinum certification for New Construction category, 
+DEWA’s IWPP model earns Seven-Star recognition and attracts over <span class="dirham-symbol" data-original-f-s="10.08px" style="font-size: 10.08px;">D</span> 47.4 Billion in investments, 
+DEWA’s Youth Council teams up with Dubai Culture to foster creative and practical skills. 
+#DEWANews
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+    <!-- INITIATIVES -->
+
+    <section class="initiatives-section" aria-labelledby="initiatives-title">
+        <div class="container">
+            <div class="initiatives-heading">
+                <div>
+                    <h2 id="initiatives-title"><strong>Initiatives</strong></h2>
+                    <p>Based on DEWA strategic directions and voice of customer DEWA launched various initiatives as follows:</p>
+                </div>
+
+                <div class="initiatives-controls" aria-label="Initiatives carousel controls">
+                    <button class="initiatives-arrow initiatives-prev" type="button" aria-label="Previous initiatives">
+                        <span class="material-icons" aria-hidden="true">chevron_left</span>
+                    </button>
+                    <button class="initiatives-arrow initiatives-next" type="button" aria-label="Next initiatives">
+                        <span class="material-icons" aria-hidden="true">chevron_right</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="initiatives-track">
+                <a class="initiative-card" href="https://www.dewa.gov.ae/en/about-us/strategic-initiatives/green-dubai">
+                    <div class="initiative-media initiative-media--green">
+                        <img class="visually-hidden" src="./static/media/initiatives/green-dubai.png?v=20260907-restore" alt="Green Dubai">
+                    </div>
+                    <div class="initiative-card-copy">
+                        <h3>Green Dubai</h3>
+                        <p>Green Dubai is DEWA&rsquo;s initiative to empower customers to make sustainable choices for a greener...</p>
+                    </div>
                 </a>
 
-                <div class="news-list">
-                    <a class="news-card" href="https://www.dewa.gov.ae/en/about-us/media-publications/latest-news/2026/9/chinese-companies-at-wetex-2026"><time datetime="2026-09-01">01 Sep 2026</time><h3>Chinese Companies at WETEX 2026: The Exhibition provides ideal gateway to UAE and region's markets</h3><span class="material-icons" aria-hidden="true">arrow_forward</span></a>
-                    <a class="news-card" href="https://www.dewa.gov.ae/en/about-us/media-publications/latest-news/2026/8/dewa-develops-a-standardised-digital"><time datetime="2026-08-31">31 Aug 2026</time><h3>DEWA develops a standardised digital design for 132kV substations</h3><span class="material-icons" aria-hidden="true">arrow_forward</span></a>
-                    <a class="news-card" href="https://www.dewa.gov.ae/en/about-us/media-publications/latest-news/2026/8/he-saeed-mohammed-al-tayer"><time datetime="2026-08-30">30 Aug 2026</time><h3>HE Saeed Mohammed Al Tayer reviews pioneering projects at DEWA's Distribution Power complex</h3><span class="material-icons" aria-hidden="true">arrow_forward</span></a>
-                </div>
+                <a class="initiative-card" href="https://www.dewa.gov.ae/en/about-us/strategic-initiatives/dewa-store">
+                    <div class="initiative-media initiative-media--store">
+                        <img class="visually-hidden" src="./static/media/initiatives/dewa-store.png?v=20260907-restore" alt="DEWA Store">
+                    </div>
+                    <div class="initiative-card-copy">
+                        <h3>DEWA Store</h3>
+                        <p>DEWA Store is the first of its kind among government entities, providing exclusive offers and discounts to...</p>
+                    </div>
+                </a>
+
+                <a class="initiative-card" href="https://www.dewa.gov.ae/en/consumer/consumption-management/my-sustainable-living-programme">
+                    <div class="initiative-media initiative-media--living">
+                        <img class="visually-hidden" src="./static/media/initiatives/my-sustainable-living.png?v=20260907-restore" alt="My Sustainable living">
+                    </div>
+                    <div class="initiative-card-copy">
+                        <h3>My Sustainable living</h3>
+                        <p>Unique programme enabling customers to check, compare and monitor electricity and water...</p>
+                    </div>
+                </a>
+
+                <a class="initiative-card" href="https://www.dewa.gov.ae/en/about-us/strategic-initiatives/easy-connect">
+                    <img loading="lazy" src="./static/media/initiatives/easy-connect.png?v=20260907-restore" alt="Easy-Connect">
+                    <div class="initiative-card-copy">
+                        <h3>Easy-Connect</h3>
+                        <p>Unifies permits and network modifications, boosting Dubai&rsquo;s business growth.</p>
+                    </div>
+                </a>
+
+                <a class="initiative-card" href="https://www.dewa.gov.ae/en/about-us/strategic-initiatives/sun-power">
+                    <img loading="lazy" src="./static/media/initiatives/sun-power.jpg?v=20260907-restore" alt="Sun Power">
+                    <div class="initiative-card-copy">
+                        <h3>Sun Power</h3>
+                        <p>Drives Dubai&rsquo;s renewable future, supporting D33 &amp; Clean Energy 2050 Strategy.</p>
+                    </div>
+                </a>
+
+                <a class="initiative-card" href="https://www.dewa.gov.ae/en/consumer/solar-community/d33-industry-friendly-power-policy">
+                    <img loading="lazy" src="./static/media/initiatives/d33-policy.jpg?v=20260907-restore" alt="D33 Industry Friendly Power Policy">
+                    <div class="initiative-card-copy">
+                        <h3>D33 Industry Friendly Power Policy</h3>
+                        <p>Building on Dubai Economic Agenda D33 to propel Dubai&rsquo;s economic growth.</p>
+                    </div>
+                </a>
+
+                <a class="initiative-card" href="https://www.dewa.gov.ae/en/about-us/strategic-initiatives/metaverse">
+                    <img loading="lazy" src="./static/media/initiatives/metaverse.jpg?v=20260907-restore" alt="A Leading Hub for the Metaverse">
+                    <div class="initiative-card-copy">
+                        <h3>A Leading Hub for the Metaverse</h3>
+                        <p>DEWA is the first local government entity to launch its DEWAverse platform.</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="initiatives-dots" aria-hidden="true">
+                <span></span><span></span><span></span><span></span><span class="is-active"></span>
             </div>
         </div>
     </section>
 
-    <!-- INFO SECTION -->
+    <!-- SMART APP -->
 
-    <section class="info-section">
-        <div class="container info-grid">
-            <div>
-                <span class="section-label">BUILDER EXPERIENCE</span>
-                <h2>One digital journey from application to connection</h2>
-                <p>Submit technical applications, follow approvals and manage project services through secure DEWA digital channels.</p>
+    <section class="smart-app-section" aria-labelledby="smart-app-title">
+        <div class="container smart-app-layout">
+            <div class="smart-app-copy">
+                <h2 id="smart-app-title">Smart App. For Smarter Tomorrow</h2>
+                <p>DEWA Smart App provides a unique interactive platform offering an elevated digital experience, powered by integrated bundles of innovative services and features, delicately designed to exceed the expectations of consumers, builders, suppliers, and students.</p>
+
+                <div class="smart-app-stores" aria-label="Download DEWA Smart App">
+                    <a href="https://itunes.apple.com/ae/app/dewa/id364928325?mt=8" aria-label="Download DEWA on the App Store">
+                        <img src="./static/media/smart-app/app-store.png?v=20260907-smart-app" alt="Download on the App Store">
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?hl=en&amp;id=com.dewa.application" aria-label="Get DEWA on Google Play">
+                        <img src="./static/media/smart-app/google-play.png?v=20260907-smart-app" alt="Get it on Google Play">
+                    </a>
+                    <a href="https://appgallery.huawei.com/" aria-label="Download DEWA on Huawei AppGallery">
+                        <img src="./static/media/smart-app/app-gallery.png?v=20260907-smart-app" alt="Download on Huawei AppGallery">
+                    </a>
+                </div>
             </div>
-            <div class="info-card">
-                <span class="material-icons">accessibility_new</span>
-                <h3>Support at every stage</h3>
-                <p>Find technical guides, request a discussion with an engineer and track applications from one convenient place.</p>
+
+            <div class="smart-app-visual">
+                <img src="./static/media/smart-app/smart-app-phones.png?v=20260907-smart-app" alt="DEWA Smart App dashboard, services and support screens">
             </div>
+        </div>
+    </section>
+
+    <!-- PURPOSE, VISION, MOTTO, MISSION AND VALUES -->
+
+    <section class="dewa-purpose-section" aria-label="DEWA purpose and values">
+        <div class="container dewa-purpose-grid">
+            <article class="dewa-purpose-item dewa-purpose">
+                <h2>PURPOSE</h2>
+                <p>Providing globally leading sustainable, efficient, and reliable power and water services, and related innovative smart solutions towards Net- Zero Future.</p>
+            </article>
+
+            <article class="dewa-purpose-item dewa-vision">
+                <h2>VISION</h2>
+                <p>A globally leading sustainable innovative corporation committed to achieving Net-Zero by 2050.</p>
+            </article>
+
+            <article class="dewa-purpose-item dewa-motto">
+                <h2>MOTTO</h2>
+                <p>For Generations to come.</p>
+            </article>
+
+            <article class="dewa-purpose-item dewa-mission">
+                <h2>MISSION</h2>
+                <p>We are committed and aligned to Dubai's 8 Guiding Principles and 50-Year Charter supporting the UAE's directions through the delivery of global leading services and innovative energy and potable water solutions enriching lives and ensuring the happiness of our stakeholders for a sustainable Net-Zero carbon 2050.</p>
+            </article>
+
+            <article class="dewa-purpose-item dewa-values">
+                <h2>VALUES</h2>
+                <ul>
+                    <li>Stakeholder Happiness</li>
+                    <li>Sustainability</li>
+                    <li>Innovation</li>
+                    <li>Excellence</li>
+                    <li>Good Governance</li>
+                </ul>
+            </article>
         </div>
     </section>
 
@@ -885,64 +959,24 @@
 </main>
 
 
-<!-- OFFICIAL DUBAI DESIGN SYSTEM FOOTER -->
-
-<dda-footer
-    footer-title="Stay connected with DEWA"
-    description="Get the latest updates, services and sustainability news."
-    sign-up-button-text="Newsletter subscription"
-    login-button-text="Sign in"
-    logo-src="https://www.dof.gov.ae/Style Library/img/gov-logo.svg"
-    logo-alt="Government of Dubai"
-    copyright-text="© 2026 Dubai Electricity &amp; Water Authority (PJSC). All Rights Reserved."
-    footer-sections='[
-        {
-            "title": "Services",
-            "links": [
-                {"label": "DEWA Service Guide", "href": "https://www.dewa.gov.ae/en/about-us/service-guide/builder-services"},
-                {"label": "Builder Enrolment", "href": "https://www.dewa.gov.ae/en/builder/useful-tools/registration-contractor-and-consultant-services"},
-                {"label": "Track Applications", "href": "https://www.dewa.gov.ae/en/owner-tracking/dashboard"}
-            ]
-        },
-        {
-            "title": "Support",
-            "links": [
-                {"label": "Contact Us", "href": "https://www.dewa.gov.ae/en/about-us/contact-us"},
-                {"label": "Frequently Asked Questions", "href": "https://www.dewa.gov.ae/en/builder/useful-tools/frequently-asked-questions"},
-                {"label": "Your Voice Matters", "href": "https://04.gov.ae/case-generate?entity=c3f2f61a-bc06-ec11-b6e5-0022486fc780&amp;lang=en"}
-            ]
-        },
-        {
-            "title": "About DEWA",
-            "links": [
-                {"label": "About Us", "href": "https://www.dewa.gov.ae/en/about-us"},
-                {"label": "News &amp; Podcast", "href": "https://www.dewa.gov.ae/en/about-us/media-publications/latest-news"},
-                {"label": "Careers", "href": "https://www.dewa.gov.ae/en/about-us/careers"}
-            ]
-        },
-        {
-            "title": "Policies",
-            "links": [
-                {"label": "Privacy &amp; Security", "href": "https://www.dewa.gov.ae/en/privacy-policy"},
-                {"label": "Terms &amp; Conditions", "href": "https://www.dewa.gov.ae/en/terms-and-conditions"},
-                {"label": "Sitemap", "href": "https://www.dewa.gov.ae/en/sitemap"}
-            ]
-        }
-    ]'
-    social-icons='[]'
-></dda-footer>
-
-
-<!-- DEWA-STYLE PARTNER AND LEGAL FOOTER -->
-
-<footer class="site-footer">
+<footer class="site-footer" aria-label="Website footer">
     <div class="container">
-        <div class="partner-logos" aria-label="Partner organizations">
-            <a class="partner-mark" href="https://sheikhmohammed.ae/en-us"><img src="https://www.dewa.gov.ae/-/media/Images/Header-and-Footer/Footer/HH-Logo.ashx?la=en&amp;hash=B02E3B11C5EFE19CE8D5A6699913EDFF" alt="HH Sheikh Mohammed bin Rashid website"></a>
-            <a class="partner-mark" href="https://alameen.gov.ae/"><img src="https://www.dewa.gov.ae/-/media/Images/Header-and-Footer/Footer/logoalameen2x.ashx?la=en&amp;hash=0071D10A8AABA6EED3A318A04078509E" alt="Al Ameen"></a>
-            <a class="partner-mark" href="https://u.ae/en/#/"><img src="https://www.dewa.gov.ae/-/media/Images/ae3fffe9-1482-41d7-a8df-52962e3739dc_government-ae-logo-english.ashx?la=en&amp;hash=B6377E819D1596C86F85FFA052A36CD5" alt="Official Portal of the UAE Government"></a>
-            <a class="partner-mark" href="https://data.dubai/en/"><img src="https://www.dewa.gov.ae/-/media/Images/Header-and-Footer/Footer/Dubai-Pulse-Logo_optimized.ashx?la=en&amp;hash=89DEB09314B347D8CBA2041B2B7C821E" alt="Dubai Data and Statistics"></a>
-            <a class="partner-mark" href="http://www.mbrgcec.ae/language/en"><img src="https://www.dewa.gov.ae/-/media/Images/DSCEAssets/images/footer/Mohammed-Bin-Rashid-Global-Centre-for-Endowment-Consultancy.ashx?la=en&amp;hash=FA994282AAAD02DF56AF65DA1760D94E" alt="Mohammed Bin Rashid Global Centre for Endowment Consultancy"></a>
+        <div class="partner-logos" aria-label="Government partners">
+            <a class="partner-mark mbr-mark" href="https://sheikhmohammed.ae/en-us" target="_blank" rel="noopener noreferrer">
+                <span lang="ar" dir="rtl">مجلس محمد بن راشد الذكي</span>
+            </a>
+            <a class="partner-mark alameen-mark" href="https://alameen.gov.ae/" target="_blank" rel="noopener noreferrer">
+                <span lang="ar" dir="rtl">الأمين</span><small>AL AMEEN</small>
+            </a>
+            <a class="partner-mark uae-mark" href="https://u.ae/" target="_blank" rel="noopener noreferrer">
+                <span aria-hidden="true">🇦🇪</span><strong>UAE</strong>
+            </a>
+            <a class="partner-mark data-mark" href="https://www.digitaldubai.ae/" target="_blank" rel="noopener noreferrer">
+                <span lang="ar" dir="rtl">بيانات دبي</span><small>DATA · DUBAI</small>
+            </a>
+            <a class="partner-mark hamdan-mark" href="https://www.hbmsu.ac.ae/" target="_blank" rel="noopener noreferrer">
+                <span>HAMDAN BIN MOHAMMED</span><small>SMART UNIVERSITY</small>
+            </a>
         </div>
 
         <div class="footer-links-row">
@@ -956,11 +990,11 @@
             </nav>
 
             <nav class="social-links" aria-label="Social media">
-                <a href="https://x.com/dewaofficial" aria-label="X">X</a>
-                <a href="https://www.facebook.com/dewaofficial" aria-label="Facebook">f</a>
-                <a href="https://www.instagram.com/dewaofficial/" aria-label="Instagram">◎</a>
-                <a href="https://www.youtube.com/user/dewaofficial" aria-label="YouTube">▶</a>
-                <a href="https://www.linkedin.com/company/dewaofficial/" aria-label="LinkedIn">in</a>
+                <a href="https://x.com/dewaofficial" target="_blank" rel="noopener noreferrer" aria-label="X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.3 2H22l-8.1 9.3L23.4 22H16l-5.8-7.6L3.6 22H0l8.5-9.8L-.6 2H7l5.2 6.9L18.3 2Zm-1.3 18h2L5.9 3.9H3.8L17 20Z"/></svg></a>
+                <a href="https://www.facebook.com/dewaofficial" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12a12 12 0 1 0-13.9 11.8v-8.4H7.1V12h3V9.4c0-3 1.8-4.7 4.5-4.7 1.3 0 2.7.2 2.7.2v3h-1.5c-1.5 0-2 .9-2 1.9V12h3.3l-.5 3.4h-2.8v8.4A12 12 0 0 0 24 12Z"/></svg></a>
+                <a href="https://www.instagram.com/dewaofficial/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm10.5 1.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"/></svg></a>
+                <a href="https://www.youtube.com/user/dewaofficial" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.6V8.4L15.8 12l-6.2 3.6Z"/></svg></a>
+                <a href="https://www.linkedin.com/company/dewaofficial/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.3 7.9H1.1V21h4.2V7.9ZM3.2 1.5A2.5 2.5 0 1 0 3.2 6a2.5 2.5 0 0 0 0-4.5ZM21 13.5c0-4-2.1-5.9-4.9-5.9a4.2 4.2 0 0 0-3.8 2.1V7.9H8.2V21h4.2v-6.5c0-1.7.3-3.4 2.5-3.4s2.2 2 2.2 3.5V21H21v-7.5Z"/></svg></a>
             </nav>
         </div>
 
@@ -968,7 +1002,7 @@
             <div>
                 <p>© 2026 Dubai Electricity &amp; Water Authority (PJSC). All Rights Reserved.</p>
                 <p>This site is best viewed using Edge, Mozilla Firefox, Safari, and Chrome</p>
-                <p>Last update on 4 September 2026</p>
+                <p>Last update on 7 September 2026</p>
             </div>
             <nav aria-label="Legal links">
                 <a href="https://www.dewa.gov.ae/en/privacy-policy">Privacy &amp; Security Policy</a>
@@ -978,30 +1012,25 @@
     </div>
 </footer>
 
-
-<!-- DEWA BOTTOM UTILITY BAR -->
-
-<nav class="dewa-utility-dock" aria-label="Quick access">
-    <div class="dock-left">
-        <a class="dock-icon-only" href="https://www.dewa.gov.ae/en/about-us/dewa-digital-journey/happiness" aria-label="Happiness"><span class="material-icons">sentiment_satisfied</span></a>
-        <a class="dock-icon-only dock-04" href="https://04.gov.ae/case-generate?entity=c3f2f61a-bc06-ec11-b6e5-0022486fc780&amp;lang=en" aria-label="Dubai 04"><img src="https://www.dewa.gov.ae/images/04.svg" alt=""></a>
-        <a href="https://www.dewa.gov.ae/en/about-us/service-guide/builder-services"><span class="material-icons">grid_view</span><span>Services</span></a>
+<nav class="m13-footer--floating_inner" aria-label="Quick access">
+    <div class="m13-footer--floating_item m13-footer--floating_itemmobile">
+        <a class="m13-footer--floating_link" href="https://www.dewa.gov.ae/en/about-us/dewa-digital-journey/happiness" aria-label="Happiness"><img src="./static/media/public_images/icn-happy.svg" alt=""></a>
+        <a class="m13-footer--floating_link" href="https://04.gov.ae/" aria-label="Suggestions and complaints"><img src="./static/media/public_images/icn-complaints.svg" alt=""></a>
+        <a class="m13-footer--floating_link" href="https://www.dewa.gov.ae/en/about-us/service-guide/builder-services"><img src="./static/media/public_images/icn-grid-view.svg" alt=""><span>Services</span></a>
     </div>
-
-    <div class="dock-right">
-        <a href="https://www.dewa.gov.ae/en/about-us/contact-us/dewa-customer-happiness-centres"><span class="material-icons dock-muted">location_on</span><span>Locations</span></a>
-        <a href="https://www.dewa.gov.ae/en/about-us/contact-us"><span class="material-icons dock-muted">headset_mic</span><span>Support</span></a>
-        <a class="dock-wordmark" href="https://www.dubai.ae/"><img src="https://www.dewa.gov.ae/-/media/Images/M74Expander/fulldubaiaefooter.ashx?la=en&amp;hash=77367ED512A37CD7868181EE41EA910C" alt="dubai.ae"></a>
-        <a class="dock-ai" href="https://chat.dubai.ae/" aria-label="Dubai AI"><img src="https://www.dewa.gov.ae/-/media/Images/M74Expander/dubaiaifooter.ashx?la=en&amp;hash=D5475A33533CDD181B93E44FA1C5ED52" alt="Dubai AI"></a>
-        <a class="dock-rammas" href="https://www.dewa.gov.ae/en/rammas-chatgpt"><img class="rammas-mark" src="https://www.dewa.gov.ae/~/media/Images/M74Expander/rammas_icon.ashx" alt=""><span><strong>Rammas</strong><small>Powered by GPT</small></span></a>
+    <div class="m13-footer--floating_item">
+        <a class="m13-footer--floating_link" href="https://www.dewa.gov.ae/en/about-us/contact-us/dewa-customer-happiness-centres"><span class="material-icons" aria-hidden="true">location_on</span><span>Locations</span></a>
+        <a class="m13-footer--floating_link" href="https://www.dewa.gov.ae/en/about-us/contact-us"><span class="material-icons" aria-hidden="true">headset_mic</span><span>Support</span></a>
+        <a class="m13-footer--floating_link" href="https://www.dubai.ae/"><img src="./static/media/public_images/DubaiAE.svg" alt="dubai.ae"></a>
+        <a class="m13-footer--floating_link" href="https://chat.dubai.ae/"><img src="./static/media/public_images/DubaiAI.svg" alt="Dubai AI"></a>
+        <a class="m13-footer--floating_link" href="https://www.dewa.gov.ae/en/rammas-chatgpt"><img src="./static/media/public_images/icn-chat_bubble_outline.svg" alt=""><span>Rammas</span></a>
     </div>
 </nav>
 
 
-
 <!-- OUR VANILLA JAVASCRIPT -->
 
-<script src="./script.js"></script>
+<script src="./script.js?v=20260907-restore"></script>
 
 
 </body>

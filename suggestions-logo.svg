@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 455 148" role="img" aria-labelledby="title desc">
+  <title id="title">04 unified suggestions portal</title>
+  <desc id="desc">The unified interactive platform between Dubai Government and its Customers</desc>
+  <g fill="none" stroke="#00b5ad" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="213" cy="42" r="28"/>
+    <path d="M213 14v56M185 42h56M213 42l28-35v64"/>
+  </g>
+  <g fill="#00b5ad" font-family="Arial, Helvetica, sans-serif" font-weight="700" text-anchor="middle">
+    <text x="227.5" y="117" font-size="20">The unified interactive platform between</text>
+    <text x="227.5" y="140" font-size="20">Dubai Government and its Customers</text>
+  </g>
+</svg>
