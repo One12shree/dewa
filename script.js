@@ -96,6 +96,87 @@ if (learnMoreButton) learnMoreButton.addEventListener(
 
 
 // =============================================
+// HOME HERO CONTROLS
+// =============================================
+
+const homeHero = document.querySelector(".m1-hero");
+const heroSlides = Array.from(document.querySelectorAll(".m1-hero__carousel-slide"));
+const heroDotItems = Array.from(document.querySelectorAll(".m1-hero .slick-dots li"));
+const heroDots = heroDotItems.map((item) => item.querySelector("button"));
+const heroPrevious = document.querySelector(".m1-hero__carousel-button--prev");
+const heroNext = document.querySelector(".m1-hero__carousel-button--next");
+const heroToggle = document.querySelector(".m1-hero__carousel-button-play-pause");
+let activeHeroSlide = Math.max(0, heroSlides.findIndex((slide) => slide.classList.contains("is-active")));
+let heroPaused = false;
+let heroTimer;
+
+function startHeroTimer() {
+    window.clearInterval(heroTimer);
+    if (heroPaused || heroSlides.length < 2) return;
+
+    heroTimer = window.setInterval(function () {
+        showHeroSlide(activeHeroSlide + 1, false);
+    }, 3750);
+}
+
+function showHeroSlide(index, restartTimer = true) {
+    if (!heroSlides.length) return;
+
+    activeHeroSlide = (index + heroSlides.length) % heroSlides.length;
+    heroSlides.forEach(function (slide, slideIndex) {
+        const selected = slideIndex === activeHeroSlide;
+        slide.classList.toggle("is-active", selected);
+        slide.setAttribute("aria-hidden", String(!selected));
+        slide.querySelectorAll("a, button").forEach(function (control) {
+            control.tabIndex = selected ? 0 : -1;
+        });
+    });
+
+    heroDotItems.forEach(function (item, dotIndex) {
+        const selected = dotIndex === activeHeroSlide;
+        item.classList.toggle("slick-active", selected);
+        item.setAttribute("aria-selected", String(selected));
+        if (selected) heroDots[dotIndex]?.setAttribute("aria-current", "true");
+        else heroDots[dotIndex]?.removeAttribute("aria-current");
+    });
+
+    if (restartTimer) startHeroTimer();
+}
+
+heroDots.forEach(function (dot, index) {
+    dot.addEventListener("click", function () {
+        showHeroSlide(index);
+    });
+});
+
+heroPrevious?.addEventListener("click", function () {
+    showHeroSlide(activeHeroSlide - 1);
+});
+
+heroNext?.addEventListener("click", function () {
+    showHeroSlide(activeHeroSlide + 1);
+});
+
+heroToggle?.addEventListener("click", function () {
+    heroPaused = !heroPaused;
+    heroToggle.setAttribute("aria-pressed", String(heroPaused));
+    heroToggle.setAttribute("aria-label", heroPaused ? "Play" : "Pause");
+    heroToggle.classList.toggle("m1-hero__carousel-button--pause", !heroPaused);
+    heroToggle.classList.toggle("m1-hero__carousel-button--play", heroPaused);
+    startHeroTimer();
+});
+
+homeHero?.addEventListener("mouseenter", function () {
+    window.clearInterval(heroTimer);
+});
+
+homeHero?.addEventListener("mouseleave", startHeroTimer);
+
+showHeroSlide(activeHeroSlide, false);
+startHeroTimer();
+
+
+// =============================================
 // NEWS VIDEO
 // =============================================
 

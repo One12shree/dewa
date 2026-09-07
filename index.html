@@ -38,7 +38,7 @@
 
     <link
         rel="stylesheet"
-        href="./style.css?v=20260907-align-all"
+        href="./style.css?v=20260907-hero-placement-final"
     >
 
 
@@ -512,46 +512,135 @@
 <main>
 
 
-    <!-- HERO -->
+    <!-- Original DEWA homepage hero structure, adapted to local assets -->
 
-    <section class="hero">
+    <div class="m1-hero" data-component="m1-hero" aria-label="Featured DEWA content">
+        <div class="m1-hero__sub"></div>
+        <div class="m1-hero__container">
+            <div class="m1-hero__carousel">
+                <div class="m1-hero__carousel-slide" data-alt="" data-desktop-img="./static/media/hero/official/proud-of-dubai.jpg" style="background-image:url('./static/media/hero/official/proud-of-dubai.jpg')">
+                    <div class="m1-hero__carousel-slide-inner">
+                        <div class="m1-hero__carousel-slide-panel"><div class="m1-hero__carousel-slide-panel--inner"></div></div>
+                    </div>
+                </div>
 
-        <div class="container hero-content">
+                <div class="m1-hero__carousel-slide is-active" data-alt="Customer Happiness Charter" data-desktop-img="./static/media/hero/official/customer-happiness.jpg" style="background-image:url('./static/media/hero/official/customer-happiness.jpg')">
+                    <div class="m1-hero__carousel-slide-inner">
+                        <div class="m1-hero__carousel-slide-panel">
+                            <div class="m1-hero__carousel-slide-panel--inner">
+                                <div class="m1-hero__carousel-slide-panel-title">Customer Happiness Charter</div>
+                                <div class="m1-hero__carousel-slide-panel-subtitle">Charting a Course to Enrich Your Experience</div>
+                                <a href="https://www.dewa.gov.ae/en/about-us/strategy-excellence/customer-happiness-charter" class="button button--primary">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-            <span class="hero-label">
-                DUBAI ELECTRICITY & WATER AUTHORITY
-            </span>
+                <div class="m1-hero__carousel-slide" data-alt="DEWA Store" data-desktop-img="./static/media/hero/official/dewa-store.jpg" style="background-image:url('./static/media/hero/official/dewa-store.jpg')">
+                    <div class="m1-hero__carousel-slide-inner">
+                        <div class="m1-hero__carousel-slide-panel">
+                            <div class="m1-hero__carousel-slide-panel--inner">
+                                <div class="m1-hero__carousel-slide-panel-title">DEWA Store</div>
+                                <div class="m1-hero__carousel-slide-panel-subtitle">Inclusive Deals for Everyone</div>
+                                <a href="https://www.dewa.gov.ae/en/about-us/strategic-initiatives/dewa-store" class="button button--primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-            <h1>
-                Towards a sustainable future
-            </h1>
+                <div class="m1-hero__carousel-slide" data-alt="ENJOY SUSTAINABLE VIBES THIS SUMMER" data-desktop-img="./static/media/hero/official/summer-vibes.jpg" style="background-image:url('./static/media/hero/official/summer-vibes.jpg')">
+                    <div class="m1-hero__carousel-slide-inner">
+                        <div class="m1-hero__carousel-slide-panel">
+                            <div class="m1-hero__carousel-slide-panel--inner">
+                                <div class="m1-hero__carousel-slide-panel-title">ENJOY SUSTAINABLE VIBES THIS SUMMER</div>
+                                <div class="m1-hero__carousel-slide-panel-subtitle">Enjoy a comfortable and more sustainable summer with our ‘Smart Living’ dashboard</div>
+                                <a href="https://www.dewa.gov.ae/en/about-us/sustainability/lets-make-this-summer-green" class="button button--primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-            <p>
-                A simple Vanilla JavaScript starter using the
-                Dubai Design System reusable components.
-            </p>
+                <div class="m1-hero__carousel-slide" data-alt="RAMMAS POWERED BY ChatGPT" data-desktop-img="./static/media/hero/official/rammas.jpg" style="background-image:url('./static/media/hero/official/rammas.jpg')">
+                    <div class="m1-hero__carousel-slide-inner">
+                        <div class="m1-hero__carousel-slide-panel">
+                            <div class="m1-hero__carousel-slide-panel--inner">
+                                <div class="m1-hero__carousel-slide-panel-title">RAMMAS POWERED BY ChatGPT</div>
+                                <div class="m1-hero__carousel-slide-panel-subtitle">ASK.CHAT.PAY.DONE</div>
+                                <a href="https://www.dewa.gov.ae/en/about-us/dewa-digital-journey/rammas" class="button button--primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="hero-actions">
-
-                <button
-                    class="primary-button"
-                    id="exploreButton"
-                >
-                    Explore Services
-                </button>
-
-                <button
-                    class="secondary-button"
-                    id="learnMoreButton"
-                >
-                    Learn More
-                </button>
-
+                <ul class="slick-dots" role="tablist" aria-label="Hero slides">
+                    <li><button type="button" aria-label="Show slide 1">1</button></li>
+                    <li class="slick-active"><button type="button" aria-label="Show slide 2" aria-current="true">2</button></li>
+                    <li><button type="button" aria-label="Show slide 3">3</button></li>
+                    <li><button type="button" aria-label="Show slide 4">4</button></li>
+                    <li><button type="button" aria-label="Show slide 5">5</button></li>
+                </ul>
             </div>
-
         </div>
 
-    </section>
+        <div class="m1-hero__carousel-nav">
+            <div class="m1-hero__carousel-nav-outer">
+                <button class="m1-hero__carousel-button--prev" type="button" aria-label="Previous slide">&#8249;</button>
+                <button aria-label="Pause" aria-pressed="false" type="button" class="m1-hero__carousel-button-play-pause m1-hero__carousel-button--pause">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" aria-hidden="true"><circle cx="10.5" cy="10.5" r="9" fill="none" stroke="white" stroke-width="2"></circle></svg>
+                </button>
+                <button class="m1-hero__carousel-button--next" type="button" aria-label="Next slide">&#8250;</button>
+            </div>
+        </div>
+        <div class="m1-hero__carousel-mouse" aria-hidden="true"></div>
+    </div>
+
+    <!-- Original DEWA persona card structure -->
+
+    <div class="m41-persona-tabs-box m41-persona-tabs-box-v2 dewa-home-personas" data-component="m41-persona-tabs-box">
+        <div class="m41-persona-tabs-box__tabs m41-persona-tabs-box--desktop p0">
+            <div class="m41-persona-tabs-box__tab-items_wrapper">
+                <div class="m41-persona-tabs-box__tab-items_inner">
+                    <ul class="m41-persona-tabs-box__tab-items">
+                        <li class="m41-persona-tabs-box__tab-item" data-index="0">
+                            <a href="https://www.dewa.gov.ae/en/consumer" class="m41-persona-tabs-box__tab-link m41-persona-tabs-box__tab-link--active">
+                                <div class="m41-persona-tabs-box-icon"><img src="./static/media/hero/official/consumer.svg" alt="Consumer"></div>
+                                <div class="m41-persona-tabs-box__tab-itemtitle">Consumer</div>
+                                <div class="m41-persona-tabs-box__tab-itemdesc">Manage your Electricity &amp; Water supply and Pay bills</div>
+                            </a>
+                        </li>
+                        <li class="m41-persona-tabs-box__tab-item" data-index="1">
+                            <a href="https://www.dewa.gov.ae/en/builder" class="m41-persona-tabs-box__tab-link">
+                                <div class="m41-persona-tabs-box-icon"><img src="./static/media/hero/official/builder.svg" alt="Builder"></div>
+                                <div class="m41-persona-tabs-box__tab-itemtitle">Builder</div>
+                                <div class="m41-persona-tabs-box__tab-itemdesc">Obtain NOCs &amp; Connections to Electricity &amp; Water networks</div>
+                            </a>
+                        </li>
+                        <li class="m41-persona-tabs-box__tab-item" data-index="2">
+                            <a href="https://www.dewa.gov.ae/en/partner" class="m41-persona-tabs-box__tab-link">
+                                <div class="m41-persona-tabs-box-icon"><img src="./static/media/hero/official/partner.svg" alt="Partner"></div>
+                                <div class="m41-persona-tabs-box__tab-itemtitle">Partner</div>
+                                <div class="m41-persona-tabs-box__tab-itemdesc">Know more about our Partnership Framework</div>
+                            </a>
+                        </li>
+                        <li class="m41-persona-tabs-box__tab-item" data-index="3">
+                            <a href="https://www.dewa.gov.ae/en/supplier" class="m41-persona-tabs-box__tab-link">
+                                <div class="m41-persona-tabs-box-icon"><img src="./static/media/hero/official/supplier.svg" alt="Supplier"></div>
+                                <div class="m41-persona-tabs-box__tab-itemtitle">Supplier</div>
+                                <div class="m41-persona-tabs-box__tab-itemdesc">Explore our Suppliers Services &amp; Updates</div>
+                            </a>
+                        </li>
+                        <li class="m41-persona-tabs-box__tab-item" data-index="4">
+                            <a href="https://www.dewa.gov.ae/en/student" class="m41-persona-tabs-box__tab-link">
+                                <div class="m41-persona-tabs-box-icon"><img src="./static/media/hero/official/student.svg" alt="Student"></div>
+                                <div class="m41-persona-tabs-box__tab-itemtitle">Student</div>
+                                <div class="m41-persona-tabs-box__tab-itemdesc">Discover Youth Growth Opportunities</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
@@ -716,9 +805,7 @@
         <div class="m122-news--weekly" data-news-date="11 Aug 2026" data-news-title="DEWA Digest" data-news-video="&lt;iframe width=&quot;100%&quot; height=&quot;100%&quot; src=&quot;https://www.youtube.com/embed/S_bnOezzNSk?si=dfYoh1CadVh5q_rm rel=0&amp;modestbranding=1&amp;hl=ar&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;" data-original-f-s="16px" style="font-size: 16px;">
             <a class="m122-news--weekly_img" href="https://www.youtube.com/watch?v=S_bnOezzNSk" target="_blank" rel="noopener noreferrer" style="background-image: url(&quot;https://www.dewa.gov.ae/-/media/Images/DEWA-revamp/Youtube-preview-Image/weekly-news.ashx&quot;); font-size: 16px;" data-original-f-s="16px">
                 <span class="m122-news--weekly_btn" data-original-f-s="16px" style="font-size: 16px;">
-                    <span class="aria-only" data-original-f-s="16px" style="font-size: 16px;">
-                        Play Video
-                    </span>
+                    <span class="aria-only" data-original-f-s="16px" style="font-size: 16px;"></span>
                 </span>
             </a>
             <div class="m122-news--weekly_date" data-original-f-s="16px" style="font-size: 16px;">
@@ -824,7 +911,7 @@ DEWA’s Youth Council teams up with Dubai Culture to foster creative and practi
             <div class="initiatives-track">
                 <a class="initiative-card" href="https://www.dewa.gov.ae/en/about-us/strategic-initiatives/green-dubai">
                     <div class="initiative-media initiative-media--green">
-                        <img class="visually-hidden" src="./static/media/initiatives/green-dubai.png?v=20260907-restore" alt="Green Dubai">
+                        <img class="visually-hidden" src="./static/media/initiatives/official/green-dubai.png?v=20260907-official-initiatives" alt="Green Dubai">
                     </div>
                     <div class="initiative-card-copy">
                         <h3>Green Dubai</h3>
@@ -834,7 +921,7 @@ DEWA’s Youth Council teams up with Dubai Culture to foster creative and practi
 
                 <a class="initiative-card" href="https://www.dewa.gov.ae/en/about-us/strategic-initiatives/dewa-store">
                     <div class="initiative-media initiative-media--store">
-                        <img class="visually-hidden" src="./static/media/initiatives/dewa-store.png?v=20260907-restore" alt="DEWA Store">
+                        <img class="visually-hidden" src="./static/media/initiatives/official/dewa-store.png?v=20260907-official-initiatives" alt="DEWA Store">
                     </div>
                     <div class="initiative-card-copy">
                         <h3>DEWA Store</h3>
@@ -844,7 +931,7 @@ DEWA’s Youth Council teams up with Dubai Culture to foster creative and practi
 
                 <a class="initiative-card" href="https://www.dewa.gov.ae/en/consumer/consumption-management/my-sustainable-living-programme">
                     <div class="initiative-media initiative-media--living">
-                        <img class="visually-hidden" src="./static/media/initiatives/my-sustainable-living.png?v=20260907-restore" alt="My Sustainable living">
+                        <img class="visually-hidden" src="./static/media/initiatives/official/my-sustainable-living.png?v=20260907-official-initiatives" alt="My Sustainable living">
                     </div>
                     <div class="initiative-card-copy">
                         <h3>My Sustainable living</h3>
@@ -853,7 +940,7 @@ DEWA’s Youth Council teams up with Dubai Culture to foster creative and practi
                 </a>
 
                 <a class="initiative-card" href="https://www.dewa.gov.ae/en/about-us/strategic-initiatives/easy-connect">
-                    <img loading="lazy" src="./static/media/initiatives/easy-connect.png?v=20260907-restore" alt="Easy-Connect">
+                    <img loading="lazy" src="./static/media/initiatives/official/easy-connect.png?v=20260907-official-initiatives" alt="Easy-Connect">
                     <div class="initiative-card-copy">
                         <h3>Easy-Connect</h3>
                         <p>Unifies permits and network modifications, boosting Dubai&rsquo;s business growth.</p>
@@ -861,7 +948,7 @@ DEWA’s Youth Council teams up with Dubai Culture to foster creative and practi
                 </a>
 
                 <a class="initiative-card" href="https://www.dewa.gov.ae/en/about-us/strategic-initiatives/sun-power">
-                    <img loading="lazy" src="./static/media/initiatives/sun-power.jpg?v=20260907-restore" alt="Sun Power">
+                    <img loading="lazy" src="./static/media/initiatives/official/sun-power.png?v=20260907-official-initiatives" alt="Sun Power">
                     <div class="initiative-card-copy">
                         <h3>Sun Power</h3>
                         <p>Drives Dubai&rsquo;s renewable future, supporting D33 &amp; Clean Energy 2050 Strategy.</p>
@@ -869,7 +956,7 @@ DEWA’s Youth Council teams up with Dubai Culture to foster creative and practi
                 </a>
 
                 <a class="initiative-card" href="https://www.dewa.gov.ae/en/consumer/solar-community/d33-industry-friendly-power-policy">
-                    <img loading="lazy" src="./static/media/initiatives/d33-policy.jpg?v=20260907-restore" alt="D33 Industry Friendly Power Policy">
+                    <img loading="lazy" src="./static/media/initiatives/official/d33-policy.jpg?v=20260907-official-initiatives" alt="D33 Industry Friendly Power Policy">
                     <div class="initiative-card-copy">
                         <h3>D33 Industry Friendly Power Policy</h3>
                         <p>Building on Dubai Economic Agenda D33 to propel Dubai&rsquo;s economic growth.</p>
@@ -877,7 +964,7 @@ DEWA’s Youth Council teams up with Dubai Culture to foster creative and practi
                 </a>
 
                 <a class="initiative-card" href="https://www.dewa.gov.ae/en/about-us/strategic-initiatives/metaverse">
-                    <img loading="lazy" src="./static/media/initiatives/metaverse.jpg?v=20260907-restore" alt="A Leading Hub for the Metaverse">
+                    <img loading="lazy" src="./static/media/initiatives/official/dewa-verse.png?v=20260907-official-initiatives" alt="A Leading Hub for the Metaverse">
                     <div class="initiative-card-copy">
                         <h3>A Leading Hub for the Metaverse</h3>
                         <p>DEWA is the first local government entity to launch its DEWAverse platform.</p>
@@ -1030,7 +1117,7 @@ DEWA’s Youth Council teams up with Dubai Culture to foster creative and practi
 
 <!-- OUR VANILLA JAVASCRIPT -->
 
-<script src="./script.js?v=20260907-restore"></script>
+<script src="./script.js?v=20260907-hero-placement-final"></script>
 
 
 </body>
