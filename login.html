@@ -3,7 +3,315 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <meta name="description" content="DEWA-style local sign-in interface">
+    <title>Login | DEWA</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@dubai-design-system/components-js@3.12.16/dist/dda/dda.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css?v=20260908-local-login">
+    <script type="module">
+        import { defineCustomElements } from "https://cdn.jsdelivr.net/npm/@dubai-design-system/components-js@3.12.16/loader/index.es2017.js";
+        defineCustomElements();
+    </script>
 </head>
-<body></body>
+
+<body class="login-page">
+    <dda-header
+        first-logo-href="./index.html"
+        first-logo-src="https://www.dof.gov.ae/Style Library/img/gov-logo.svg"
+        first-logo-white-src="https://www.dof.gov.ae/Style Library/img/gov-logo-white.svg"
+        first-logo-alt="Government of Dubai"
+        second-logo-href="./index.html"
+        second-logo-src="https://www.digitaldubai.ae/ResourcePackages/Theme/assets/dist/images/logo.svg"
+        second-logo-white-src="https://www.digitaldubai.ae/ResourcePackages/Theme/assets/dist/images/logo-white.svg"
+        second-logo-alt="Digital Dubai"
+        search_input_placeholder="Search"
+        search_tooltip="Search"
+        accessibility_tooltip="Accessibility"
+        use-predesigned-accessibility-menu="true"
+        language_tooltip="Language"
+        language_text="العربية"
+        login_tooltip="Login"
+        login-text="Login"
+        login-link="./login.html"
+        login-icon="account_circle"
+        use-login-popup="false"
+        hamburger_menu_button_name="Menu"
+        side-main-menu-title="Main Menu"
+        side-menu-items='[{"label":"Home","href":"./index.html","subMenu":[]},{"label":"Login","active":"true","href":"./login.html","subMenu":[]},{"label":"Support","href":"./support.html","subMenu":[]}]'
+        hide-other-menu="true"
+        other-menu-items="[]"
+        quick-links='[{"headerMenuLabel":"Home","url":"./index.html"},{"headerMenuLabel":"Login","active":"true","url":"./login.html"},{"headerMenuLabel":"Support","url":"./support.html"}]'
+    ></dda-header>
+
+    <main class="login-main">
+        <section class="j07-login" aria-labelledby="login-page-title">
+            <div class="login-container">
+                <header class="login-section-title">
+                    <h1 id="login-page-title">Welcome to DEWA</h1>
+                </header>
+
+                <div class="login-grid">
+                    <aside class="login-role-column" aria-label="Select user type">
+                        <h2 class="j07-login--columntitle">I am</h2>
+                        <ul class="j07-login--links-list">
+                            <li><button class="j07-login--links-listlink active" type="button" data-login-role="Consumer" aria-pressed="true">Consumer</button></li>
+                            <li><button class="j07-login--links-listlink" type="button" data-login-role="Builder" aria-pressed="false">Builder</button></li>
+                            <li><button class="j07-login--links-listlink" type="button" data-login-role="Supplier" aria-pressed="false">Supplier</button></li>
+                            <li><button class="j07-login--links-listlink" type="button" data-login-role="Government" aria-pressed="false">Government</button></li>
+                            <li><button class="j07-login--links-listlink" type="button" data-login-role="Job Seeker" aria-pressed="false">Job Seeker</button></li>
+                            <li><button class="j07-login--links-listlink" type="button" data-login-role="Other User" aria-pressed="false">Other User</button></li>
+                        </ul>
+                    </aside>
+
+                    <div class="login-form-column">
+                        <h2 class="j07-login--columntitle main" id="roleSignInTitle">Consumer Sign In</h2>
+
+                        <div id="uaePassArea">
+                            <div class="j07-login--columnheading">
+                                <div class="j07-login--columnheading_title">For Individuals</div>
+                                <div class="j07-login--columnheading_desc">Individuals with an Emirates ID need to sign in using UAE Pass</div>
+                            </div>
+
+                            <button class="button--uaepass" type="button" id="uaePassButton">
+                                <span class="uae-pass-symbol" aria-hidden="true"><i></i><i></i><i></i></span>
+                                <span>Sign in with UAE PASS</span>
+                            </button>
+
+                            <div class="j07-login--separator" aria-hidden="true">
+                                <div class="j07-login--separatortext">OR</div>
+                            </div>
+                        </div>
+
+                        <div class="j07-login--columnheading credentials-heading">
+                            <div class="j07-login--columnheading_title" id="credentialsTitle">For Businesses and Non-Emirates ID holders</div>
+                            <div class="j07-login--columnheading_desc" id="credentialsDescription">Business and Non-Emirates ID holders may sign in using their DEWA credentials</div>
+                        </div>
+
+                        <form class="j07-login-form" id="localLoginForm" autocomplete="off" novalidate>
+                            <div class="login-field">
+                                <label for="form-field-login-main-username" id="usernameLabel">Username <span class="sr-only">(required)</span></label>
+                                <input id="form-field-login-main-username" type="text" placeholder="Username" minlength="1" maxlength="50" autocomplete="off" required>
+                                <p class="login-help"><button type="button" class="text-link">Forgot username?</button></p>
+                            </div>
+
+                            <div class="login-field">
+                                <label for="form-field-login-main-password">Password <span class="sr-only">(required)</span></label>
+                                <span class="login-password-wrap">
+                                    <input id="form-field-login-main-password" type="password" placeholder="Password" autocomplete="off" required>
+                                    <button class="login-password-toggle" type="button" aria-label="Show password" aria-pressed="false">
+                                        <span class="material-icons" aria-hidden="true">visibility</span>
+                                    </button>
+                                </span>
+                                <p class="login-help"><button type="button" class="text-link">Forgot password?</button></p>
+                            </div>
+
+                            <label class="login-checkbox">
+                                <input type="checkbox">
+                                <span>Remember Me</span>
+                            </label>
+
+                            <div class="login-actions">
+                                <button class="login-submit" type="submit">Sign in</button>
+                                <p><button type="button" class="text-link" id="createProfileButton">Create Online Profile</button></p>
+                            </div>
+                            <p class="login-demo-message" id="loginDemoMessage" role="status" hidden></p>
+                        </form>
+
+                        <p class="login-note">Note: Your login session will be timed out after 15 minutes of inactivity. Please read our<br>
+                            <button type="button" class="text-link">Terms &amp; Conditions</button> and
+                            <button type="button" class="text-link">Privacy &amp; Security Policy</button>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer login-footer" aria-label="Website footer">
+        <div class="container">
+            <div class="partner-logos" aria-label="Government partners">
+                <span class="partner-mark mbr-mark"><span lang="ar" dir="rtl">مجلس محمد بن راشد الذكي</span></span>
+                <span class="partner-mark alameen-mark"><span lang="ar" dir="rtl">الأمين</span><small>AL AMEEN</small></span>
+                <span class="partner-mark uae-mark"><span aria-hidden="true">🇦🇪</span><strong>UAE</strong></span>
+                <span class="partner-mark data-mark"><span lang="ar" dir="rtl">بيانات دبي</span><small>DATA · DUBAI</small></span>
+                <span class="partner-mark hamdan-mark"><span>HAMDAN BIN MOHAMMED</span><small>SMART UNIVERSITY</small></span>
+            </div>
+
+            <div class="footer-links-row">
+                <nav class="footer-utility-links" aria-label="Footer information">
+                    <span>Sitemap</span>
+                    <span>Website Survey</span>
+                    <span>The Workplace &amp; Careers</span>
+                    <span>Customer Happiness Centres (Self-Service)</span>
+                    <span>Customer Care Centre Services</span>
+                    <span>Security E-Pass</span>
+                </nav>
+                <div class="social-links" aria-label="Social media icons">
+                    <span aria-label="X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.3 2H22l-8.1 9.3L23.4 22H16l-5.8-7.6L3.6 22H0l8.5-9.8L-.6 2H7l5.2 6.9L18.3 2Zm-1.3 18h2L5.9 3.9H3.8L17 20Z"/></svg></span>
+                    <span aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12a12 12 0 1 0-13.9 11.8v-8.4H7.1V12h3V9.4c0-3 1.8-4.7 4.5-4.7 1.3 0 2.7.2 2.7.2v3h-1.5c-1.5 0-2 .9-2 1.9V12h3.3l-.5 3.4h-2.8v8.4A12 12 0 0 0 24 12Z"/></svg></span>
+                    <span aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm10.5 1.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"/></svg></span>
+                    <span aria-label="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.6V8.4L15.8 12l-6.2 3.6Z"/></svg></span>
+                    <span aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.3 7.9H1.1V21h4.2V7.9ZM3.2 1.5A2.5 2.5 0 1 0 3.2 6a2.5 2.5 0 0 0 0-4.5ZM21 13.5c0-4-2.1-5.9-4.9-5.9a4.2 4.2 0 0 0-3.8 2.1V7.9H8.2V21h4.2v-6.5c0-1.7.3-3.4 2.5-3.4s2.2 2 2.2 3.5V21H21v-7.5Z"/></svg></span>
+                </div>
+            </div>
+
+            <div class="footer-legal">
+                <div>
+                    <p>© 2026 Dubai Electricity &amp; Water Authority (PJSC). All Rights Reserved.</p>
+                    <p>This site is best viewed using Edge, Mozilla Firefox, Safari, and Chrome</p>
+                    <p>Last update on 8 September 2026</p>
+                </div>
+                <nav aria-label="Legal information"><span>Privacy &amp; Security Policy</span><span>Terms &amp; Conditions</span></nav>
+            </div>
+        </div>
+    </footer>
+
+    <nav class="m13-footer--floating_inner" aria-label="Quick access">
+        <div class="m13-footer--floating_item m13-footer--floating_itemmobile">
+            <button class="m13-footer--floating_link" type="button" aria-label="Happiness"><img src="./static/media/public_images/icn-happy.svg" alt=""></button>
+            <button class="m13-footer--floating_link" type="button" aria-label="Suggestions and complaints"><img src="./static/media/public_images/icn-complaints.svg" alt=""></button>
+            <button class="m13-footer--floating_link" type="button"><img src="./static/media/public_images/icn-grid-view.svg" alt=""><span>Services</span></button>
+        </div>
+        <div class="m13-footer--floating_item">
+            <button class="m13-footer--floating_link" type="button"><span class="material-icons" aria-hidden="true">location_on</span><span>Locations</span></button>
+            <a class="m13-footer--floating_link" href="./support.html"><span class="material-icons" aria-hidden="true">headset_mic</span><span>Support</span></a>
+            <button class="m13-footer--floating_link" type="button"><img src="./static/media/public_images/DubaiAE.svg" alt="dubai.ae"></button>
+            <button class="m13-footer--floating_link" type="button"><img src="./static/media/public_images/DubaiAI.svg" alt="Dubai AI"></button>
+            <button class="m13-footer--floating_link" type="button"><img src="./static/media/public_images/icn-chat_bubble_outline.svg" alt=""><span>Rammas</span></button>
+        </div>
+    </nav>
+
+    <script>
+        async function inheritHomepageFooter() {
+            try {
+                const response = await fetch('./index.html', { cache: 'no-store' });
+                if (!response.ok) return;
+
+                const homepage = new DOMParser().parseFromString(await response.text(), 'text/html');
+                const homepageFooter = homepage.querySelector('.site-footer');
+                const homepageDock = homepage.querySelector('.m13-footer--floating_inner');
+                const currentFooter = document.querySelector('.login-footer');
+                const currentDock = document.querySelector('.m13-footer--floating_inner');
+
+                if (!homepageFooter || !homepageDock || !currentFooter || !currentDock) return;
+
+                [homepageFooter, homepageDock].forEach((section) => {
+                    section.querySelectorAll('a').forEach((link) => {
+                        link.href = '#';
+                        link.removeAttribute('target');
+                        link.removeAttribute('rel');
+                        link.addEventListener('click', (event) => event.preventDefault());
+                    });
+                });
+
+                currentFooter.replaceWith(homepageFooter);
+                currentDock.replaceWith(homepageDock);
+            } catch (error) {
+                console.warn('Homepage footer fallback is being used.');
+            }
+        }
+
+        inheritHomepageFooter();
+
+        const roleOptions = {
+            Consumer: {
+                title: 'Consumer Sign In',
+                credentialsTitle: 'For Businesses and Non-Emirates ID holders',
+                description: 'Business and Non-Emirates ID holders may sign in using their DEWA credentials',
+                username: 'Username',
+                profile: 'Create Online Profile',
+                uaePass: true
+            },
+            Builder: {
+                title: 'Builder Sign In',
+                credentialsTitle: 'For Builders',
+                description: 'Builders may sign in using their DEWA credentials',
+                username: 'Username',
+                profile: 'Register as a Builder',
+                uaePass: false
+            },
+            Supplier: {
+                title: 'Supplier Sign In',
+                credentialsTitle: 'For Suppliers',
+                description: 'Suppliers may sign in using their DEWA credentials',
+                username: 'Username',
+                profile: 'Register as a Supplier',
+                uaePass: false
+            },
+            Government: {
+                title: 'Government Sign In',
+                credentialsTitle: 'For Government Users',
+                description: 'Government users may sign in using their DEWA credentials',
+                username: 'Username',
+                profile: 'Create Online Profile',
+                uaePass: false
+            },
+            'Job Seeker': {
+                title: 'Job Seeker Sign In',
+                credentialsTitle: 'For Job Seekers',
+                description: 'Job seekers may sign in to access their profile',
+                username: 'Email or Username',
+                profile: 'Create Job Seeker Profile',
+                uaePass: false
+            },
+            'Other User': {
+                title: 'Other User Sign In',
+                credentialsTitle: 'For Other Users',
+                description: 'Other users may sign in using their DEWA credentials',
+                username: 'Username',
+                profile: 'Create Online Profile',
+                uaePass: false
+            }
+        };
+
+        const loginForm = document.getElementById('localLoginForm');
+        const roleButtons = document.querySelectorAll('[data-login-role]');
+        const passwordInput = document.getElementById('form-field-login-main-password');
+        const passwordToggle = document.querySelector('.login-password-toggle');
+        const passwordIcon = passwordToggle.querySelector('.material-icons');
+        const demoMessage = document.getElementById('loginDemoMessage');
+        let selectedRole = 'Consumer';
+
+        function selectRole(role) {
+            selectedRole = role;
+            const option = roleOptions[role];
+            document.getElementById('roleSignInTitle').textContent = option.title;
+            document.getElementById('credentialsTitle').textContent = option.credentialsTitle;
+            document.getElementById('credentialsDescription').textContent = option.description;
+            document.getElementById('usernameLabel').firstChild.textContent = option.username + ' ';
+            document.getElementById('form-field-login-main-username').placeholder = option.username;
+            document.getElementById('createProfileButton').textContent = option.profile;
+            document.getElementById('uaePassArea').hidden = !option.uaePass;
+            loginForm.reset();
+            demoMessage.hidden = true;
+
+            roleButtons.forEach((button) => {
+                const active = button.dataset.loginRole === role;
+                button.classList.toggle('active', active);
+                button.setAttribute('aria-pressed', String(active));
+            });
+        }
+
+        roleButtons.forEach((button) => button.addEventListener('click', () => selectRole(button.dataset.loginRole)));
+
+        passwordToggle.addEventListener('click', () => {
+            const showPassword = passwordInput.type === 'password';
+            passwordInput.type = showPassword ? 'text' : 'password';
+            passwordToggle.setAttribute('aria-pressed', String(showPassword));
+            passwordToggle.setAttribute('aria-label', showPassword ? 'Hide password' : 'Show password');
+            passwordIcon.textContent = showPassword ? 'visibility_off' : 'visibility';
+        });
+
+        loginForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+            demoMessage.textContent = selectedRole + ' sign-in is a non-functional frontend preview. No details were sent or stored.';
+            demoMessage.hidden = false;
+        });
+
+        document.getElementById('uaePassButton').addEventListener('click', () => {
+            demoMessage.textContent = 'UAE Pass is a non-functional frontend preview. No external page was opened.';
+            demoMessage.hidden = false;
+        });
+    </script>
+</body>
 </html>
