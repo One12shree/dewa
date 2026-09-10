@@ -134,6 +134,11 @@ dda-header .dda-header.transparent .dda-mobile-entt-logo .logo-white { display: 
 dda-header .dda-header .dda-mega-menu > li > a,
 dda-header .dda-header .dda-mobile-search button i { color: var(--primary-text); }
 dda-header .dda-header .dda-mega-menu > li > a::after { background-color: var(--dewa-primary); }
+/* Navigation must remain readable while the vendor webfont loads or fails. */
+dda-header .dda-header .dda-mega-menu > li > a,
+dda-header .dda-header .main_side_menu a {
+    font-family: Arial, Helvetica, sans-serif;
+}
 /* Match the vendor's important transparent-theme hamburger rule. */
 dda-header .dda-header .hamburger-menu-btn::before,
 dda-header .dda-header .hamburger-menu-btn::after,
