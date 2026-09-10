@@ -8,10 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@dubai-design-system/components-js@3.12.16/dist/dda/dda.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="./style.css?v=20260908-local-login">
-    <script type="module">
-        import { defineCustomElements } from "https://cdn.jsdelivr.net/npm/@dubai-design-system/components-js@3.12.16/loader/index.es2017.js";
-        defineCustomElements();
-    </script>
+    <script type="module" src="./design-system.js"></script>
 </head>
 
 <body class="login-page">
@@ -72,10 +69,19 @@
                                 <div class="j07-login--columnheading_desc">Individuals with an Emirates ID need to sign in using UAE Pass</div>
                             </div>
 
-                            <button class="button--uaepass" type="button" id="uaePassButton">
-                                <span class="uae-pass-symbol" aria-hidden="true"><i></i><i></i><i></i></span>
-                                <span>Sign in with UAE PASS</span>
-                            </button>
+                            <dda-button
+                                class="button--uaepass"
+                                id="uaePassButton"
+                                button_id="uae-pass-button"
+                                button_type="button"
+                                button_color="onsurface-primary"
+                                start_icon="fingerprint"
+                                button_shape="pill"
+                                size="lg"
+                                gap="1"
+                                aria_label="Sign in with UAE PASS"
+                                custom_class="login-dda-uae-pass-inner"
+                            >Sign in with UAE PASS</dda-button>
 
                             <div class="j07-login--separator" aria-hidden="true">
                                 <div class="j07-login--separatortext">OR</div>
@@ -90,19 +96,35 @@
                         <form class="j07-login-form" id="localLoginForm" autocomplete="off" novalidate>
                             <div class="login-field">
                                 <label for="form-field-login-main-username" id="usernameLabel">Username <span class="sr-only">(required)</span></label>
-                                <input id="form-field-login-main-username" type="text" placeholder="Username" minlength="1" maxlength="50" autocomplete="off" required>
-                                <p class="login-help"><button type="button" class="text-link">Forgot username?</button></p>
+                                <input id="form-field-login-main-username" type="text" placeholder="Username" minlength="1" maxlength="50" inputmode="text" autocomplete="off" aria-describedby="usernameValidation" required>
+                                <p class="login-validation-message" id="usernameValidation" role="alert" hidden></p>
+                                <p class="login-help">
+                                    <dda-button button_type="button" button_color="default-link" button_id="forgot-username-button" aria_label="Forgot username" size="sm" custom_class="login-dda-link-inner">Forgot username?</dda-button>
+                                </p>
                             </div>
 
                             <div class="login-field">
                                 <label for="form-field-login-main-password">Password <span class="sr-only">(required)</span></label>
                                 <span class="login-password-wrap">
-                                    <input id="form-field-login-main-password" type="password" placeholder="Password" autocomplete="off" required>
-                                    <button class="login-password-toggle" type="button" aria-label="Show password" aria-pressed="false">
-                                        <span class="material-icons" aria-hidden="true">visibility</span>
-                                    </button>
+                                    <input id="form-field-login-main-password" type="password" placeholder="Password" minlength="8" autocomplete="off" aria-describedby="passwordValidation" title="Use at least 8 characters with uppercase, lowercase, number, and special character" required>
+                                    <dda-button
+                                        class="login-password-toggle"
+                                        id="passwordToggleButton"
+                                        button_id="password-toggle-button"
+                                        button_type="button"
+                                        button_color="default-link"
+                                        start_icon="visibility"
+                                        button_text=""
+                                        button_shape="circle"
+                                        size="sm"
+                                        aria_label="Show password"
+                                        custom_class="login-dda-eye-inner"
+                                    ></dda-button>
                                 </span>
-                                <p class="login-help"><button type="button" class="text-link">Forgot password?</button></p>
+                                <p class="login-validation-message" id="passwordValidation" role="alert" hidden></p>
+                                <p class="login-help">
+                                    <dda-button button_type="button" button_color="default-link" button_id="forgot-password-button" aria_label="Forgot password" size="sm" custom_class="login-dda-link-inner">Forgot password?</dda-button>
+                                </p>
                             </div>
 
                             <label class="login-checkbox">
@@ -111,8 +133,18 @@
                             </label>
 
                             <div class="login-actions">
-                                <button class="button button--primary login-submit" type="submit">Sign in</button>
-                                <p><button type="button" class="text-link" id="createProfileButton">Create Online Profile</button></p>
+                                <dda-button
+                                    class="login-submit"
+                                    id="loginSubmitButton"
+                                    button_id="login-submit-button"
+                                    button_type="button"
+                                    button_color="default-primary"
+                                    button_shape="pill"
+                                    size="lg"
+                                    aria_label="Sign in"
+                                    custom_class="login-dda-submit-inner"
+                                >Sign in</dda-button>
+                                <p><dda-button button_type="button" button_color="default-link" button_id="create-profile-button" id="createProfileButton" aria_label="Create Online Profile" size="sm" custom_class="login-dda-link-inner">Create Online Profile</dda-button></p>
                             </div>
                             <p class="login-demo-message" id="loginDemoMessage" role="status" hidden></p>
                         </form>
@@ -181,137 +213,6 @@
         </div>
     </nav>
 
-    <script>
-        async function inheritHomepageFooter() {
-            try {
-                const response = await fetch('./index.html', { cache: 'no-store' });
-                if (!response.ok) return;
-
-                const homepage = new DOMParser().parseFromString(await response.text(), 'text/html');
-                const homepageFooter = homepage.querySelector('.site-footer');
-                const homepageDock = homepage.querySelector('.m13-footer--floating_inner');
-                const currentFooter = document.querySelector('.login-footer');
-                const currentDock = document.querySelector('.m13-footer--floating_inner');
-
-                if (!homepageFooter || !homepageDock || !currentFooter || !currentDock) return;
-
-                [homepageFooter, homepageDock].forEach((section) => {
-                    section.querySelectorAll('a').forEach((link) => {
-                        link.href = '#';
-                        link.removeAttribute('target');
-                        link.removeAttribute('rel');
-                        link.addEventListener('click', (event) => event.preventDefault());
-                    });
-                });
-
-                currentFooter.replaceWith(homepageFooter);
-                currentDock.replaceWith(homepageDock);
-            } catch (error) {
-                console.warn('Homepage footer fallback is being used.');
-            }
-        }
-
-        inheritHomepageFooter();
-
-        const roleOptions = {
-            Consumer: {
-                title: 'Consumer Sign In',
-                credentialsTitle: 'For Businesses and Non-Emirates ID holders',
-                description: 'Business and Non-Emirates ID holders may sign in using their DEWA credentials',
-                username: 'Username',
-                profile: 'Create Online Profile',
-                uaePass: true
-            },
-            Builder: {
-                title: 'Builder Sign In',
-                credentialsTitle: 'For Builders',
-                description: 'Builders may sign in using their DEWA credentials',
-                username: 'Username',
-                profile: 'Register as a Builder',
-                uaePass: false
-            },
-            Supplier: {
-                title: 'Supplier Sign In',
-                credentialsTitle: 'For Suppliers',
-                description: 'Suppliers may sign in using their DEWA credentials',
-                username: 'Username',
-                profile: 'Register as a Supplier',
-                uaePass: false
-            },
-            Government: {
-                title: 'Government Sign In',
-                credentialsTitle: 'For Government Users',
-                description: 'Government users may sign in using their DEWA credentials',
-                username: 'Username',
-                profile: 'Create Online Profile',
-                uaePass: false
-            },
-            'Job Seeker': {
-                title: 'Job Seeker Sign In',
-                credentialsTitle: 'For Job Seekers',
-                description: 'Job seekers may sign in to access their profile',
-                username: 'Email or Username',
-                profile: 'Create Job Seeker Profile',
-                uaePass: false
-            },
-            'Other User': {
-                title: 'Other User Sign In',
-                credentialsTitle: 'For Other Users',
-                description: 'Other users may sign in using their DEWA credentials',
-                username: 'Username',
-                profile: 'Create Online Profile',
-                uaePass: false
-            }
-        };
-
-        const loginForm = document.getElementById('localLoginForm');
-        const roleButtons = document.querySelectorAll('[data-login-role]');
-        const passwordInput = document.getElementById('form-field-login-main-password');
-        const passwordToggle = document.querySelector('.login-password-toggle');
-        const passwordIcon = passwordToggle.querySelector('.material-icons');
-        const demoMessage = document.getElementById('loginDemoMessage');
-        let selectedRole = 'Consumer';
-
-        function selectRole(role) {
-            selectedRole = role;
-            const option = roleOptions[role];
-            document.getElementById('roleSignInTitle').textContent = option.title;
-            document.getElementById('credentialsTitle').textContent = option.credentialsTitle;
-            document.getElementById('credentialsDescription').textContent = option.description;
-            document.getElementById('usernameLabel').firstChild.textContent = option.username + ' ';
-            document.getElementById('form-field-login-main-username').placeholder = option.username;
-            document.getElementById('createProfileButton').textContent = option.profile;
-            document.getElementById('uaePassArea').hidden = !option.uaePass;
-            loginForm.reset();
-            demoMessage.hidden = true;
-
-            roleButtons.forEach((button) => {
-                const active = button.dataset.loginRole === role;
-                button.classList.toggle('active', active);
-                button.setAttribute('aria-pressed', String(active));
-            });
-        }
-
-        roleButtons.forEach((button) => button.addEventListener('click', () => selectRole(button.dataset.loginRole)));
-
-        passwordToggle.addEventListener('click', () => {
-            const showPassword = passwordInput.type === 'password';
-            passwordInput.type = showPassword ? 'text' : 'password';
-            passwordToggle.setAttribute('aria-pressed', String(showPassword));
-            passwordToggle.setAttribute('aria-label', showPassword ? 'Hide password' : 'Show password');
-            passwordIcon.textContent = showPassword ? 'visibility_off' : 'visibility';
-        });
-
-        loginForm.addEventListener('submit', (event) => {
-            event.preventDefault();
-            demoMessage.textContent = selectedRole + ' sign-in is a non-functional frontend preview. No details were sent or stored.';
-            demoMessage.hidden = false;
-        });
-
-        document.getElementById('uaePassButton').addEventListener('click', () => {
-            demoMessage.textContent = 'UAE Pass is a non-functional frontend preview. No external page was opened.';
-            demoMessage.hidden = false;
-        });
-    </script>
+    <script src="./login.js"></script>
 </body>
 </html>

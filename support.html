@@ -3,7 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Support</title>
+    <meta name="description" content="DEWA support channels and customer service information">
+    <title>Support | DEWA</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@dubai-design-system/components-js@3.12.16/dist/dda/dda.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css?v=20260908-support">
+    <script type="module" src="./design-system.js"></script>
 </head>
-<body></body>
+
+<body class="support-page">
+    <dda-header
+        first-logo-href="./index.html"
+        first-logo-src="./static/media/support/gov_logo2x.webp"
+        first-logo-white-src="./static/media/support/gov_logo2x.webp"
+        first-logo-alt="Government of Dubai"
+        second-logo-href="./index.html"
+        second-logo-src="./static/media/support/dewalogo2024.webp"
+        second-logo-white-src="./static/media/support/dewalogo2024.webp"
+        second-logo-alt="Dubai Electricity and Water Authority"
+        search_input_placeholder="Search"
+        search_tooltip="Search"
+        accessibility_tooltip="Accessibility"
+        use-predesigned-accessibility-menu="true"
+        language_tooltip="Language"
+        language_text="العربية"
+        login_tooltip="Login"
+        login-text="Login"
+        login-link="./login.html"
+        login-icon="account_circle"
+        use-login-popup="false"
+        hamburger_menu_button_name="Menu"
+        side-main-menu-title="Main Menu"
+        side-menu-items='[{"label":"Home","href":"./index.html","subMenu":[]},{"label":"Login","href":"./login.html","subMenu":[]},{"label":"Support","active":"true","href":"./support.html","subMenu":[]}]'
+        hide-other-menu="true"
+        other-menu-items="[]"
+        quick-links='[{"headerMenuLabel":"Home","url":"./index.html"},{"headerMenuLabel":"Investor Relations","url":"#"},{"headerMenuLabel":"EasyPay","url":"#"}]'
+    ></dda-header>
+
+    <main class="support-main" id="main-content">
+        <div class="support-container">
+            <header class="support-page-title">
+                <h1>Support</h1>
+            </header>
+
+            <section class="support-section" aria-labelledby="support-type-title">
+                <h2 class="support-section-title" id="support-type-title">Please give us more details on the type of support required</h2>
+                <div class="support-type-grid">
+                    <a class="support-type-card" href="https://www.dewa.gov.ae/en/about-us/support-and-points-of-interest/support/consumer?p=0x0xx"><img src="./static/media/support/Consumer.png" alt=""><span>Consumer</span></a>
+                    <a class="support-type-card" href="https://www.dewa.gov.ae/en/about-us/support-and-points-of-interest/support/inquiry-form?p=BL"><img src="./static/media/support/Builder.png" alt=""><span>Builder</span></a>
+                    <a class="support-type-card" href="https://www.dewa.gov.ae/en/about-us/support-and-points-of-interest/support/inquiry-form?p=JB"><img src="./static/media/support/JobSeeker.png" alt=""><span>Job Seeker</span></a>
+                    <a class="support-type-card" href="https://www.dewa.gov.ae/en/about-us/support-and-points-of-interest/support/inquiry-form?p=CN"><img src="./static/media/support/Partner.png" alt=""><span>Contract</span></a>
+                    <a class="support-type-card" href="https://www.dewa.gov.ae/en/about-us/support-and-points-of-interest/support/inquiry-form?p=SP"><img src="./static/media/support/Supplier.png" alt=""><span>Supplier</span></a>
+                    <a class="support-type-card" href="https://www.dewa.gov.ae/en/about-us/support-and-points-of-interest/support/inquiry-form?p=PO"><img src="./static/media/support/POD.png" alt=""><span>POD</span></a>
+                    <a class="support-type-card" href="https://www.dewa.gov.ae/en/about-us/support-and-points-of-interest/support/inquiry-form?p=FN"><img src="./static/media/support/FinancialQueries.png" alt=""><span>Finance</span></a>
+                    <a class="support-type-card" href="https://www.dewa.gov.ae/en/about-us/support-and-points-of-interest/support/inquiry-form?p=LA"><img src="./static/media/support/LegalAffairs.png" alt=""><span>Legal Affairs</span></a>
+                    <a class="support-type-card" href="https://www.dewa.gov.ae/en/about-us/support-and-points-of-interest/support/inquiry-form?p=MC"><img src="./static/media/support/MediaCentre.png" alt=""><span>Media Centre</span></a>
+                    <a class="support-type-card" href="https://www.dewa.gov.ae/en/about-us/support-and-points-of-interest/support/inquiry-form?p=BN"><img src="./static/media/support/Benchmarking.png" alt=""><span>Benchmarking</span></a>
+                    <a class="support-type-card" href="https://www.dewa.gov.ae/en/about-us/support-and-points-of-interest/support/inquiry-form?p=AC"><img src="./static/media/support/Academy.png" alt=""><span>DEWA Academy</span></a>
+                </div>
+            </section>
+
+            <section class="support-section customer-support-section" aria-labelledby="customer-support-title">
+                <h2 class="support-section-title" id="customer-support-title">Customer Support</h2>
+                <div class="customer-support-grid">
+                    <a class="customer-support-card customer-support-card--alert" href="https://www.dewa.gov.ae/en/consumer/supply-management/smart-response-intro-old">
+                        <img src="./static/media/support/red_sr.svg" alt="" aria-hidden="true">
+                        <h3>Smart Response</h3>
+                        <p>In case of an Electricity or Water Technical incidents, please use <strong>Smart Response</strong> to report it, or call us at <strong class="support-alert-text">991</strong></p>
+                    </a>
+                    <a class="customer-support-card" href="tel:04-6019999">
+                        <img src="./static/media/support/phone_cs.svg" alt="" aria-hidden="true">
+                        <h3>Customer Care Centre</h3>
+                        <p>Call us for customer service inquiries 24/7 on 04-6019999</p>
+                    </a>
+                    <a class="customer-support-card" href="#" id="hayakSupportCard">
+                        <img src="./static/media/support/chat_with_hayak.svg" alt="" aria-hidden="true">
+                        <h3>Hayak<br>Chat (Video/Text)</h3>
+                        <p>Hayak enables you to interact with DEWA Customer Care Centre agents 24/7 through online text chat with the option of video chat</p>
+                    </a>
+                    <a class="customer-support-card" href="https://www.dewa.gov.ae/Ashir">
+                        <img src="./static/media/support/ashir_cs.svg" alt="" aria-hidden="true">
+                        <h3>Ashir</h3>
+                        <p>Live sign language video chat for People of Determination with hearing impairment, via DEWA Smart App</p>
+                    </a>
+                    <a class="customer-support-card" href="https://wa.me/+97146019999">
+                        <img src="./static/media/support/whatsapp_cs.svg" alt="" aria-hidden="true">
+                        <h3>WhatsApp</h3>
+                        <p>Reach us anytime on WhatsApp at 04-6019999 for inquiries, information and transactional services.</p>
+                    </a>
+                </div>
+
+                <div class="support-contact-action">
+                    <dda-button id="contactDetailsButton" button_id="support-contact-details" button_type="button" button_color="default-secondary" button_shape="rounded" size="md" aria_label="View more contact details" custom_class="support-dda-outline-inner">View more contact details</dda-button>
+                </div>
+
+                <div class="support-service-guide">
+                    <h2 class="support-section-title">Need more information about DEWA services?</h2>
+                    <dda-button id="serviceGuideButton" button_id="support-service-guide" button_type="button" button_color="default-link" size="md" aria_label="View DEWA Service Guide" custom_class="support-dda-link-inner">View DEWA Service Guide</dda-button>
+                </div>
+            </section>
+
+            <section class="support-improve" aria-labelledby="support-improve-title">
+                <h2 class="support-section-title" id="support-improve-title">Help us Improve</h2>
+                <p>Your voice matters. Let’s improve together.</p>
+                <p>We’ll resolve your feedback and respond to your suggestions within <strong>3 working days.</strong></p>
+
+                <a class="support-feedback-card" href="https://04.gov.ae/case-generate?entity=c3f2f61a-bc06-ec11-b6e5-0022486fc780&amp;lang=en">
+                    <span class="support-feedback-logo"><img src="./static/media/support/eSuggest%20Logo%20Footer.png" alt="Dubai Government Unified Suggestions Portal"></span>
+                    <span class="support-feedback-copy">
+                        <strong>Your Voice Matters</strong>
+                        <span>By sharing your suggestions, comments, and complaints we can continuously improve our services</span>
+                    </span>
+                    <span class="material-icons" aria-hidden="true">arrow_forward</span>
+                </a>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer support-footer" aria-label="Website footer"></footer>
+    <nav class="m13-footer--floating_inner support-dock" aria-label="Quick access"></nav>
+
+    <script src="./support.js"></script>
+</body>
 </html>
