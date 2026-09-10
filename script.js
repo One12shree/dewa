@@ -7,17 +7,17 @@ const header = document.querySelector("dda-header");
 if (header) {
     const homeMenu = JSON.stringify([
         {
-            headerMenuLabel: "Home",
+            label: "Home",
             active: "true",
-            url: "#"
+            href: "./index.html"
         },
         {
-            headerMenuLabel: "Login",
-            url: "./login.html"
+            label: "Login",
+            href: "./login.html"
         },
         {
-            headerMenuLabel: "Support",
-            url: "./support.html"
+            label: "Support",
+            href: "./support.html"
         }
     ]);
 

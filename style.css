@@ -127,6 +127,21 @@ body {
    DEWA PARTNER AND LEGAL FOOTER
 ================================================== */
 
+/* The component uses a transparent theme at /; this site has a white header. */
+dda-header { display: block; min-height: 130px; }
+dda-header .dda-header.transparent .dda-head-logo .logo-white,
+dda-header .dda-header.transparent .dda-mobile-entt-logo .logo-white { display: block; }
+dda-header .dda-header .dda-mega-menu > li > a,
+dda-header .dda-header .dda-mobile-search button i { color: var(--primary-text); }
+dda-header .dda-header .dda-mega-menu > li > a::after { background-color: var(--dewa-primary); }
+/* Match the vendor's important transparent-theme hamburger rule. */
+dda-header .dda-header .hamburger-menu-btn::before,
+dda-header .dda-header .hamburger-menu-btn::after,
+dda-header .dda-header .hamburger-line { background-color: var(--primary-text) !important; }
+@media (max-width: 1024px) {
+    dda-header { min-height: 80px; }
+}
+
 dda-footer { display: none; }
 
 .site-footer { display: block; padding: 44px 0 34px; background: var(--background); color: var(--primary-text); }
